@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/comfort-from-tati-react/static/css/main.7acaea2f.css",
+    "main.js": "/comfort-from-tati-react/static/js/main.d5d45c05.js",
+    "index.html": "/comfort-from-tati-react/index.html",
+    "main.7acaea2f.css.map": "/comfort-from-tati-react/static/css/main.7acaea2f.css.map",
+    "main.d5d45c05.js.map": "/comfort-from-tati-react/static/js/main.d5d45c05.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7acaea2f.css",
+    "static/js/main.d5d45c05.js"
+  ]
+}
