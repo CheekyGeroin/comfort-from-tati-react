@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/comfort-from-tati-react/static/css/main.7acaea2f.css",
-    "main.js": "/comfort-from-tati-react/static/js/main.d5d45c05.js",
+    "main.js": "/comfort-from-tati-react/static/js/main.7662f0a8.js",
     "index.html": "/comfort-from-tati-react/index.html",
     "main.7acaea2f.css.map": "/comfort-from-tati-react/static/css/main.7acaea2f.css.map",
-    "main.d5d45c05.js.map": "/comfort-from-tati-react/static/js/main.d5d45c05.js.map"
+    "main.7662f0a8.js.map": "/comfort-from-tati-react/static/js/main.7662f0a8.js.map"
   },
   "entrypoints": [
     "static/css/main.7acaea2f.css",
-    "static/js/main.d5d45c05.js"
+    "static/js/main.7662f0a8.js"
   ]
 }
