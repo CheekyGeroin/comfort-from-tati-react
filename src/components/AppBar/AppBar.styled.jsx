@@ -1,5 +1,6 @@
 import styled from "@emotion/styled";
 import { desktop, tablet } from 'utils/breakpoints';
+import { secondTextColor } from "utils/variables";
 
 export const Header = styled.header`
 position: absolute;
@@ -7,7 +8,7 @@ position: absolute;
   z-index: 999;
 padding-top: 34px;
 padding-bottom: 17px;
-  border-bottom: 2px solid #f6f7f1;
+  border-bottom: 2px solid ${secondTextColor};
   @media screen and (min-width: ${tablet}) {
     padding-top: 52px;
     padding-bottom: 32px;

@@ -1,6 +1,7 @@
 import styled from '@emotion/styled';
 import { NavLink } from 'react-router-dom';
 import { desktop, tablet } from 'utils/breakpoints';
+import { btnBgColor } from 'utils/variables';
 
 export const Container = styled.div`
 display: flex;
@@ -43,7 +44,7 @@ font-size: 18px;
   cursor: pointer;
   .active {
     text-decoration: underline;
-    color: $btnBgColor;
+    color: ${btnBgColor};
   }
     
   

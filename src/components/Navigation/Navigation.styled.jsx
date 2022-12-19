@@ -1,6 +1,7 @@
 import styled from '@emotion/styled';
 import { NavLink } from 'react-router-dom';
 import { desktop, tablet } from 'utils/breakpoints';
+import { btnBgColor, cubicBezier, secondFont, secondTextColor } from 'utils/variables';
 
 export const Container = styled.nav`
   @media screen and (max-width: 767px) {
@@ -42,24 +43,24 @@ export const Item = styled.li`
 `;
 
 export const Link = styled(NavLink)`
-  color: $secondTextColor;
+  color: ${secondTextColor};
   font-size: 40px;
   line-height: 1.25;
   text-decoration: none;
 
   @media screen and (max-width: 1279px) {
-    font-family: $secondFont;
+    font-family: ${secondFont};
     font-weight: 300;
   }
   @media screen and (min-width: ${tablet}) {
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-      border-radius 250ms cubic-bezier(0.4, 0, 0.2, 1),
-      padding 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 250ms ${cubicBezier},
+      border-radius 250ms ${cubicBezier},
+      padding 250ms ${cubicBezier};
 
     :hover,
     :focus {
       padding: 0 12px;
-      background-color: $btnBgColor;
+      background-color: ${btnBgColor};
       border-radius: 5px;
     }
   }
@@ -74,24 +75,24 @@ export const Link = styled(NavLink)`
 `;
 
 export const InnerLink = styled.a`
-  color: $secondTextColor;
+  color: ${secondTextColor};
   font-size: 40px;
   line-height: 1.25;
   text-decoration: none;
 
   @media screen and (max-width: 1279px) {
-    font-family: $secondFont;
+    font-family: ${secondFont};
     font-weight: 300;
   }
   @media screen and (min-width: ${tablet}) {
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-      border-radius 250ms cubic-bezier(0.4, 0, 0.2, 1),
-      padding 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 250ms ${cubicBezier},
+      border-radius 250ms ${cubicBezier},
+      padding 250ms ${cubicBezier};
 
     :hover,
     :focus {
       padding: 0 12px;
-      background-color: $btnBgColor;
+      background-color: ${btnBgColor};
       border-radius: 5px;
     }
   }

@@ -1,6 +1,7 @@
 import styled from "@emotion/styled";
 import { NavLink } from "react-router-dom";
 import { tablet } from "utils/breakpoints";
+import { btnBgColor, cubicBezier, hoverIconColor } from "utils/variables";
 
 
 export const Container = styled.div`
@@ -34,8 +35,16 @@ export const Item = styled.li`
 
 export const CallLink = styled.a`
 
+
 `
 
-export const Link = styled(NavLink)``
+export const Link = styled(NavLink)`
+`
 
-export const Svg = styled.svg``
+export const Svg = styled.svg`
+fill: ${btnBgColor};
+transition: fill 250ms ${cubicBezier};
+:hover, :focus{
+  fill: ${hoverIconColor};
+}
+`
