@@ -102,22 +102,19 @@ export const SecondContainer = styled.div`
   } ;
 `;
 
-export const FirstImage = styled.img`
-border: none;
-  @media screen and (min-width:${tablet}){
-    &--left{
-      border-radius: 8px 18px 8px 105px;
-    }; 
-  };`;
+export const FirstImage = styled.picture`
+  border: none;
+  @media screen and (min-width: ${tablet}) {
+    border-radius: 8px 18px 8px 105px;
+  } ;
+`;
 
-export const SecondImage = styled.img`border: none;
-  @media screen and (min-width:${tablet}){
-    &--right{
-      border-radius: 8px 94px 8px 16px;
-    };
-  };
+export const SecondImage = styled.picture`
+  border: none;
+  @media screen and (min-width: ${tablet}) {
+    border-radius: 8px 94px 8px 16px;
+  }
   @media screen and (min-width: ${desktop}) {
-    &--right {
-      border-radius: 10px 120px 10px 20px;
-    };
-  };`;
+    border-radius: 10px 120px 10px 20px;
+  } ;
+`;

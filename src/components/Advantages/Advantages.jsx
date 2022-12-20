@@ -1,15 +1,16 @@
-import Images from "./Images/Images"
-import TextList from "./TextList/TextList"
+import { Container, Section } from './Advantages.styled';
+import Images from './Images/Images';
+import TextList from './TextList/TextList';
 
 const Advantages = () => {
-    return (
-        <section>
-            <div>
-            <Images />
-            <TextList />
-            </div>
-        </section>
-    )
-}
+  return (
+    <Section>
+      <Container>
+        <Images />
+        <TextList />
+      </Container>
+    </Section>
+  );
+};
 
-export default Advantages
+export default Advantages;

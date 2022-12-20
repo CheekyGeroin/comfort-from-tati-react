@@ -27,6 +27,7 @@ export const List = styled.ul`
 display:flex;
 align-items:center;
 list-style:none;
+padding:0;
 `
 
 export const Item = styled.li`
