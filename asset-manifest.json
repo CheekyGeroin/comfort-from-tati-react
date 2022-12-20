@@ -1,13 +1,19 @@
 {
   "files": {
     "main.css": "/comfort-from-tati-react/static/css/main.7acaea2f.css",
-    "main.js": "/comfort-from-tati-react/static/js/main.adadcb63.js",
+    "main.js": "/comfort-from-tati-react/static/js/main.bebbc78b.js",
+    "static/media/20221016-133440-223.mp4": "/comfort-from-tati-react/static/media/20221016-133440-223.2043641f2c6a2fcd6407.mp4",
+    "static/media/20221016-133440-223.webm": "/comfort-from-tati-react/static/media/20221016-133440-223.12896e037e085b2ab1c9.webm",
+    "static/media/blue-plaid-301w.jpg": "/comfort-from-tati-react/static/media/blue-plaid-301w.329712eb93826fa59b34.jpg",
+    "static/media/blue-plaid-260w.jpg": "/comfort-from-tati-react/static/media/blue-plaid-260w.914fd226b302ca654d4b.jpg",
+    "static/media/pink-plaid-265w.jpg": "/comfort-from-tati-react/static/media/pink-plaid-265w.9ffd5bb2ca1de5927966.jpg",
+    "static/media/pink-plaid-260w.jpg": "/comfort-from-tati-react/static/media/pink-plaid-260w.0e080e52c3bdb66dc3b0.jpg",
     "index.html": "/comfort-from-tati-react/index.html",
     "main.7acaea2f.css.map": "/comfort-from-tati-react/static/css/main.7acaea2f.css.map",
-    "main.adadcb63.js.map": "/comfort-from-tati-react/static/js/main.adadcb63.js.map"
+    "main.bebbc78b.js.map": "/comfort-from-tati-react/static/js/main.bebbc78b.js.map"
   },
   "entrypoints": [
     "static/css/main.7acaea2f.css",
-    "static/js/main.adadcb63.js"
+    "static/js/main.bebbc78b.js"
   ]
 }
