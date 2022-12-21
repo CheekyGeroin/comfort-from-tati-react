@@ -1,19 +1,50 @@
 {
   "files": {
     "main.css": "/comfort-from-tati-react/static/css/main.7acaea2f.css",
-    "main.js": "/comfort-from-tati-react/static/js/main.bebbc78b.js",
+    "main.js": "/comfort-from-tati-react/static/js/main.e616f170.js",
     "static/media/20221016-133440-223.mp4": "/comfort-from-tati-react/static/media/20221016-133440-223.2043641f2c6a2fcd6407.mp4",
     "static/media/20221016-133440-223.webm": "/comfort-from-tati-react/static/media/20221016-133440-223.12896e037e085b2ab1c9.webm",
+    "static/media/plaid-732w.jpg": "/comfort-from-tati-react/static/media/plaid-732w.bf2f9b831911b9b60f2f.jpg",
+    "static/media/plaid-578w.jpg": "/comfort-from-tati-react/static/media/plaid-578w.9cde0bbbfbdb43c59856.jpg",
+    "static/media/plaid-630w.jpg": "/comfort-from-tati-react/static/media/plaid-630w.7054e59c853c0c9d959f.jpg",
+    "static/media/blue-plaid-602w.jpg": "/comfort-from-tati-react/static/media/blue-plaid-602w.d77a746bf242e745f5cb.jpg",
+    "static/media/individual-736w.jpg": "/comfort-from-tati-react/static/media/individual-736w.36015946152566e34964.jpg",
+    "static/media/blue-plaid-520w.jpg": "/comfort-from-tati-react/static/media/blue-plaid-520w.9b2a87137f471f6d9334.jpg",
+    "static/media/bathroom-712w.jpg": "/comfort-from-tati-react/static/media/bathroom-712w.4c70f6b1eb4fec7ad81f.jpg",
+    "static/media/individual-630w.jpg": "/comfort-from-tati-react/static/media/individual-630w.3bddbf52e4718be56d5a.jpg",
+    "static/media/pink-plaid-530w.jpg": "/comfort-from-tati-react/static/media/pink-plaid-530w.4ce462782abfc1036b66.jpg",
+    "static/media/kids-712w.jpg": "/comfort-from-tati-react/static/media/kids-712w.7450cabbea7c4adb71e1.jpg",
+    "static/media/bathroom-736w.jpg": "/comfort-from-tati-react/static/media/bathroom-736w.8ac890c1d67f2e2cb40e.jpg",
+    "static/media/bathroom-630w.jpg": "/comfort-from-tati-react/static/media/bathroom-630w.c91c92260de6f98b7c60.jpg",
+    "static/media/colour-740w.jpg": "/comfort-from-tati-react/static/media/colour-740w.d242d8a5eba8ca549ad6.jpg",
+    "static/media/plaid-366w.jpg": "/comfort-from-tati-react/static/media/plaid-366w.b253e0a69b5201acfc72.jpg",
+    "static/media/colour-578w.jpg": "/comfort-from-tati-react/static/media/colour-578w.0ac4a534f89ea0fb9c77.jpg",
+    "static/media/plaid-289w.jpg": "/comfort-from-tati-react/static/media/plaid-289w.0b8c2f837bbea203d542.jpg",
+    "static/media/pink-plaid-520w.jpg": "/comfort-from-tati-react/static/media/pink-plaid-520w.303c09be0fe45f195d65.jpg",
+    "static/media/kids-630w.jpg": "/comfort-from-tati-react/static/media/kids-630w.a54e936b9216aba1d9d3.jpg",
+    "static/media/kids-738w.jpg": "/comfort-from-tati-react/static/media/kids-738w.d6e96a0bf373f9217e3f.jpg",
+    "static/media/colour-630w.jpg": "/comfort-from-tati-react/static/media/colour-630w.46fb0c259194dc9e512a.jpg",
+    "static/media/plaid-315w.jpg": "/comfort-from-tati-react/static/media/plaid-315w.3bc8125355c56b982a66.jpg",
     "static/media/blue-plaid-301w.jpg": "/comfort-from-tati-react/static/media/blue-plaid-301w.329712eb93826fa59b34.jpg",
+    "static/media/individual-368w.jpg": "/comfort-from-tati-react/static/media/individual-368w.f21d028c93ed35abbf86.jpg",
     "static/media/blue-plaid-260w.jpg": "/comfort-from-tati-react/static/media/blue-plaid-260w.914fd226b302ca654d4b.jpg",
+    "static/media/bathroom-356w.jpg": "/comfort-from-tati-react/static/media/bathroom-356w.35ebe3ca03a48d2052fc.jpg",
+    "static/media/individual-315w.jpg": "/comfort-from-tati-react/static/media/individual-315w.6e995cd5503a635cde5f.jpg",
+    "static/media/kids-356w.jpg": "/comfort-from-tati-react/static/media/kids-356w.f84ab88a33da3789bb5f.jpg",
     "static/media/pink-plaid-265w.jpg": "/comfort-from-tati-react/static/media/pink-plaid-265w.9ffd5bb2ca1de5927966.jpg",
+    "static/media/colour-370w.jpg": "/comfort-from-tati-react/static/media/colour-370w.0cf427f1a515fadeba8f.jpg",
+    "static/media/bathroom-368w.jpg": "/comfort-from-tati-react/static/media/bathroom-368w.0e696d8e28438521df1b.jpg",
+    "static/media/bathroom-315w.jpg": "/comfort-from-tati-react/static/media/bathroom-315w.e703a26a19de3a918d2f.jpg",
+    "static/media/kids-369w.jpg": "/comfort-from-tati-react/static/media/kids-369w.2f68a281e9b30ad062ec.jpg",
+    "static/media/colour-289w.jpg": "/comfort-from-tati-react/static/media/colour-289w.b10f2c2af2d79a9ce2de.jpg",
     "static/media/pink-plaid-260w.jpg": "/comfort-from-tati-react/static/media/pink-plaid-260w.0e080e52c3bdb66dc3b0.jpg",
+    "static/media/kids-315w.jpg": "/comfort-from-tati-react/static/media/kids-315w.88d52fcb3135df772e1b.jpg",
     "index.html": "/comfort-from-tati-react/index.html",
     "main.7acaea2f.css.map": "/comfort-from-tati-react/static/css/main.7acaea2f.css.map",
-    "main.bebbc78b.js.map": "/comfort-from-tati-react/static/js/main.bebbc78b.js.map"
+    "main.e616f170.js.map": "/comfort-from-tati-react/static/js/main.e616f170.js.map"
   },
   "entrypoints": [
     "static/css/main.7acaea2f.css",
-    "static/js/main.bebbc78b.js"
+    "static/js/main.e616f170.js"
   ]
 }
