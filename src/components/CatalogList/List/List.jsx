@@ -2,16 +2,21 @@ import {
   CatalogList,
   ImageContainer,
   Img,
-  Item,
+  FirstItem,
+  SecondItem,
+  ThirdItem,
+  FourthItem,
+  FifthItem,
   Link,
   Text,
   TextContainer,
+  FifthImg,
 } from './List.styled';
 
 const List = () => {
   return (
     <CatalogList>
-      <Item>
+      <FirstItem>
         <Link href='#'>
           <ImageContainer>
             <Img
@@ -25,8 +30,8 @@ const List = () => {
             <Text>Пледи</Text>
           </TextContainer>
         </Link>
-      </Item>
-      <Item>
+      </FirstItem>
+      <SecondItem>
         <Link href='#'>
           <ImageContainer>
             <Img
@@ -40,8 +45,8 @@ const List = () => {
             <Text>Килим у ванну</Text>
           </TextContainer>
         </Link>
-      </Item>
-      <Item>
+      </SecondItem>
+      <ThirdItem>
         <Link href='#'>
           <ImageContainer>
             <Img
@@ -55,8 +60,8 @@ const List = () => {
             <Text>Індивідуальне замовлення</Text>
           </TextContainer>
         </Link>
-      </Item>
-      <Item>
+      </ThirdItem>
+      <FourthItem>
         <Link href='#'>
           <ImageContainer>
             <Img
@@ -70,11 +75,11 @@ const List = () => {
             <Text>Дитячі пледи</Text>
           </TextContainer>
         </Link>
-      </Item>
-      <Item>
+      </FourthItem>
+      <FifthItem>
         <Link href='#'>
           <ImageContainer>
-            <Img
+            <FifthImg
               src={require('images/catalog/colour-289w.jpg')}
               alt="Пледи"
               srcSet={`${require('images/catalog/colour-289w.jpg')} 289w, ${require('images/catalog/colour-315w.jpg')} 315w, ${require('images/catalog/colour-370w.jpg')} 370w, ${require('images/catalog/colour-578w.jpg')} 578w, ${require('images/catalog/colour-630w.jpg')} 630w, ${require('images/catalog/colour-740w.jpg')} 740w`}
@@ -85,7 +90,7 @@ const List = () => {
             <Text>Кольори</Text>
           </TextContainer>
         </Link>
-      </Item>
+      </FifthItem>
     </CatalogList>
   );
 };
