@@ -1,6 +1,6 @@
 import styled from "@emotion/styled";
 import { desktop, tablet } from "utils/breakpoints";
-import { btnBgColor, footerAccentFontWeight, mainFont, mainFontWeight, mainTextColor } from "utils/variables";
+import { btnBgColor, cubicBezier, footerAccentFontWeight, mainFont, mainFontWeight, mainTextColor } from "utils/variables";
 
 export const Wrapper = styled.div`
 position:relative;
@@ -21,7 +21,10 @@ margin-left:auto;
 };`
 
 export const Slide = styled.div`
-text-align: center;`
+text-align: center;
+transition: opacity 250ms ${cubicBezier};
+opacity: ${props => props.fade};
+`
 
 export const TextContainer = styled.div``
 

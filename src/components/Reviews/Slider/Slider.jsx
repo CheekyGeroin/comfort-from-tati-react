@@ -6,20 +6,23 @@ import { LeftArrow, Name,Text, RightArrow, Slide, TextContainer, Wrapper } from 
 const Slider = ({reviews}) => {
     const [slide, setSlide] = useState(0);
     const [currentTimer, setCurrentTimer] = useState();
+    const [fade, setFade] = useState(1)
     
     const DURATION = 300;
     const handleClick = (move) => {
         const timer = setTimeout(() => {
-            setSlide((s)=>s + move)
+            setSlide((s) => s + move)
+            setFade(1)
         }, DURATION)
         clearTimeout(currentTimer);
         setCurrentTimer(timer)
+        setFade(0)
     }
 
     return (
         <Wrapper>
-            <Slide>
-                <TextContainer>
+            <Slide fade={fade}>
+                <TextContainer >
                     <Name>{reviews[slide].name}</Name>
                     <Text>{reviews[slide].text}</Text>
                 </TextContainer>
