@@ -10,11 +10,12 @@ background-color: ${catalogBgColor};
 
 export const Container = styled.div`
 max-width: ${mobile};
- padding: 0 15px;
+ 
+ @media screen and (min-width:${tablet}){
+  padding: 0 15px;
  margin: 0;
  margin-left: auto;
  margin-right: auto;
- @media screen and (min-width:${tablet}){
     max-width: ${tablet};
  }
  @media screen and (min-width:${desktop}){

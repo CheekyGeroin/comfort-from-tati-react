@@ -5,6 +5,7 @@ import MainPage from "pages/MainPage/MainPage";
 import { Route, Routes } from "react-router-dom";
 import { ToastContainer } from "react-toastify";
 import AppBar from "./AppBar/AppBar";
+import Footer from "./Footer/Footer";
 
 export const App = () => {
   return (
@@ -16,6 +17,7 @@ export const App = () => {
         <Route path="/en" element={<CatalogPageEn />} />
         <Route path="/basket" element={<BasketPage />} />
       </Routes>
+      <Footer/>
       <ToastContainer autoClose={5000} />
     </div>
   );
