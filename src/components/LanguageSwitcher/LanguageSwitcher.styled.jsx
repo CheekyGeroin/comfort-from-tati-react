@@ -43,10 +43,16 @@ font-size: 18px;
   line-height: 1.67;
   color: #afafaf;
   cursor: pointer;
-  .active {
-    text-decoration: underline;
-    color: ${btnBgColor};
+ ${props => {
+  if (props.active === 'ua') {
+  return ` text-decoration: underline;
+    color: ${btnBgColor};`
   }
+  if (props.active === 'en') {
+  return ` text-decoration: underline;
+    color: ${btnBgColor};`
+  }
+ }}
     
   
   @media screen and (min-width: ${tablet}) {

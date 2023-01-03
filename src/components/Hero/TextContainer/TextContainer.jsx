@@ -7,6 +7,8 @@ import {
 } from './TextContainer.styled';
 
 const TextContainer = () => {
+
+  
   return (
     <Container>
       <TitleContainer>
