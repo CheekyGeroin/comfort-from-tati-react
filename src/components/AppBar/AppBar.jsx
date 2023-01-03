@@ -1,3 +1,4 @@
+import BurgerIcon from 'components/BurgerMenu/BurgerIcon/BurgerIcon';
 import BurgerMenu from 'components/BurgerMenu/BurgerMenu';
 import HeaderLinks from 'components/HeaderLinks/HeaderLinks';
 import LanguageSwitcher from 'components/LanguageSwitcher/LanguageSwitcher';
@@ -12,12 +13,12 @@ const AppBar = () => {
       {mobilePoint && <Container>
         <Logo />
         <LanguageSwitcher />
-        <BurgerMenu/>
+        <BurgerIcon id='open'/>
       </Container>}
       {tabletPoint && <Container>
         <Logo />
         <LanguageSwitcher />
-        <BurgerMenu/>
+        <BurgerIcon id='open'/>
       </Container>}
       {desktopPoint && <Container>
         <Logo />
