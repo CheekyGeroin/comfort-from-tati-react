@@ -1,5 +1,5 @@
 import styled from "@emotion/styled";
-import { desktop, tablet } from 'utils/breakpoints';
+import { desktop, mobile, tablet } from 'utils/breakpoints';
 import { secondTextColor } from "utils/variables";
 
 export const Header = styled.header`
@@ -20,10 +20,20 @@ padding-bottom: 17px;
 `
 
 export const Container = styled.div`
+max-width: ${mobile};
+ padding: 0 15px;
+ margin: 0;
+ margin-left: auto;
+ margin-right: auto;
+ @media screen and (min-width:${tablet}){
+  justify-content: center;
+    max-width: ${tablet};
+ }
+ @media screen and (min-width:${desktop}){
+    max-width: ${desktop};
+ }
 display: flex;
   align-items: center;
   position: relative;
-  @media screen and (min-width: ${tablet}) {
-    justify-content: center;
-  };
+  
 `
