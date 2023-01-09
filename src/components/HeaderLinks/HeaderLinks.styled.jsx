@@ -1,6 +1,6 @@
 import styled from "@emotion/styled";
 import { NavLink } from "react-router-dom";
-import { tablet } from "utils/breakpoints";
+import { desktop, tablet } from "utils/breakpoints";
 import { btnBgColor, cubicBezier, hoverIconColor } from "utils/variables";
 
 
@@ -47,5 +47,14 @@ fill: ${btnBgColor};
 transition: fill 250ms ${cubicBezier};
 :hover, :focus{
   fill: ${hoverIconColor};
+}
+
+@media screen and (max-width:1279px){
+  width:19px;
+  height:19px;
+}
+@media screen and (min-width:${desktop}){
+  width:32px;
+  height:32px;
 }
 `

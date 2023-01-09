@@ -1,8 +1,9 @@
+import PropTypes from 'prop-types';
 import HeaderLinks from 'components/HeaderLinks/HeaderLinks';
 import LanguageSwitcher from 'components/LanguageSwitcher/LanguageSwitcher';
 import Navigation from 'components/Navigation/Navigation';
 import { mobilePoint, tabletPoint } from 'utils/breakpoints';
-import BurgerIcon from './BurgerIcon/BurgerIcon';
+import BurgerIconClose from './BurgerIcon/BurgerIconClose';
 import {
   ContactsContainer,
   Container,
@@ -13,7 +14,7 @@ import {
 import Social from './Social/Social';
 import Contacts from 'components/Footer/Contacts/Contacts';
 
-const BurgerMenu = () => {
+const BurgerMenu = ({onClick}) => {
   return (
     <div>
       {mobilePoint && (
@@ -21,7 +22,7 @@ const BurgerMenu = () => {
           <LinksContainer>
             <HeaderLinks />
             <LanguageSwitcher />
-            <BurgerIcon id="close" />
+            <BurgerIconClose id="close"  onClick={onClick}/>
           </LinksContainer>
           <MenuContainer>
             <Navigation />
@@ -39,7 +40,7 @@ const BurgerMenu = () => {
           <LinksContainer>
             <HeaderLinks />
             <LanguageSwitcher />
-            <BurgerIcon id="close" />
+            <BurgerIconClose id="close" onClick={onClick}/>
           </LinksContainer>
           <MenuContainer>
             <Navigation />
@@ -53,4 +54,7 @@ const BurgerMenu = () => {
   );
 };
 
+BurgerMenu.propTypes = {
+  onClick:PropTypes.func.isRequired,
+}
 export default BurgerMenu;

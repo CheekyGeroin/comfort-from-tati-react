@@ -26,14 +26,18 @@ max-width: ${mobile};
  margin-left: auto;
  margin-right: auto;
  @media screen and (min-width:${tablet}){
-  justify-content: center;
     max-width: ${tablet};
  }
  @media screen and (min-width:${desktop}){
     max-width: ${desktop};
  }
-display: flex;
-  align-items: center;
-  position: relative;
-  
+`
+export const MenuContainer = styled.div`
+display:flex;
+align-items:center;
+position:relative;
+justify-content: space-between;
+@media screen and (min-width:${tablet}){
+  justify-content:center;
+}
 `

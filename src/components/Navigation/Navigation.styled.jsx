@@ -18,6 +18,7 @@ export const Container = styled.nav`
 export const List = styled.ul`
   list-style: none;
   padding:0;
+  margin:0;
   @media screen and (min-width: ${desktop}) {
     display: flex;
     align-items: center;

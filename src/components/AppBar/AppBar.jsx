@@ -6,38 +6,56 @@ import Logo from 'components/Logo/Logo';
 import Navigation from 'components/Navigation/Navigation';
 import { useState } from 'react';
 import { desktopPoint, mobilePoint, tabletPoint } from 'utils/breakpoints';
-import { Container, Header } from './AppBar.styled';
+import { Container, Header, MenuContainer } from './AppBar.styled';
 
 const AppBar = () => {
-  const [open, setOpen] = useState(false)
-  
+  const [open, setOpen] = useState(false);
+
   const handleOpenMenu = () => {
-    setOpen(true)
-  }
+    setOpen(true);
+  };
   const handleCloseMenu = () => {
-    setOpen(false)
-  }
+    setOpen(false);
+  };
 
   return (
     <Header>
-      {mobilePoint && <Container>
-        <Logo />
-        <LanguageSwitcher />
-        <BurgerIcon id='open' onClick={handleOpenMenu} />
-        {open && <BurgerMenu onClick={handleCloseMenu}/>}
-      </Container>}
-      {tabletPoint && <Container>
-        <Logo />
-        <LanguageSwitcher />
-        <BurgerIcon id='open' onClick={handleOpenMenu}/>
-        {open && <BurgerMenu onClick={handleCloseMenu}/>}
-      </Container>}
-      {desktopPoint && <Container>
-        <Logo />
-        <Navigation />
-        <LanguageSwitcher />
-        <HeaderLinks />
-      </Container>}
+      {mobilePoint && (
+        <div>
+          <Container>
+          {!open && (
+            <MenuContainer>
+              <Logo />
+              <LanguageSwitcher />
+              <BurgerIcon id="open" onClick={handleOpenMenu} />
+            </MenuContainer>
+          )}
+        </Container>
+        {open && <BurgerMenu onClick={handleCloseMenu} />}
+        </div>
+      )}
+      {tabletPoint && (
+        <div>
+          <Container>
+          {!open && (
+            <MenuContainer>
+              <Logo />
+              <LanguageSwitcher />
+              <BurgerIcon id="open" onClick={handleOpenMenu} />
+            </MenuContainer>
+          )}
+          </Container>
+          {open && <BurgerMenu onClick={handleCloseMenu} />}
+        </div>
+      )}
+      {desktopPoint && (
+        <Container>
+          <Logo />
+          <Navigation />
+          <LanguageSwitcher />
+          <HeaderLinks />
+        </Container>
+      )}
     </Header>
   );
 };

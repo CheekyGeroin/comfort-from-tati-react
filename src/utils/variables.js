@@ -12,3 +12,4 @@ export const catalogBgColor = '#B3D1D9';
 export const hoverIconColor = '#F0B69C';
 export const hoverBtnColor = '#F9B584';
 export const cubicBezier = 'cubic-bezier(0.4, 0, 0.2, 1)';
+export const burgerBgColor = '#052D38';
