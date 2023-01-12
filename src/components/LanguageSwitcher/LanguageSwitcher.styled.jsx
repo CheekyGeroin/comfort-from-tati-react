@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
 import { NavLink } from 'react-router-dom';
-import { desktop, tablet } from 'utils/breakpoints';
+import {  tablet } from 'utils/breakpoints';
 import { btnBgColor } from 'utils/variables';
 
 export const Container = styled.div`
@@ -8,19 +8,13 @@ display: flex;
   align-items: center;
   top: 20px;
   right: 85px;
-  @media screen and (max-width:1279px){
-   
-  };
+  margin-right:20px;
 
   @media screen and (min-width:${tablet}){
     top: 39px;
     right: 105px;
-    margin: 0;
+    
   };
-  @media screen and (min-width:${desktop}){
-    margin-right: 20px;
-  };
-  }
   `;
 
 export const List = styled.ul`
@@ -28,7 +22,7 @@ export const List = styled.ul`
   align-items: center;
   list-style: none;
   padding: 0;
-  margin-right:20px;
+  margin:0;
   
 `;
 

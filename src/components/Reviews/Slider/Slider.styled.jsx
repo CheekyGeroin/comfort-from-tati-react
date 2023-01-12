@@ -63,28 +63,36 @@ line-height:1.1;
 export const LeftArrow = styled.button`
 position:absolute;
 top:calc(50% - 20px);
-left:-90px;
+left:-18px;
 
 background-color:transparent;
 border:1px solid ${mainTextColor};
 border-radius:50%;
 cursor:pointer;
 
-padding:24px 15px;
+padding:13px 4px;
 
 transform:rotate(180deg);
+@media screen and (min-width:${tablet}){
+    left: -90px;
+    padding:24px 15px;
+}
 `
 
 export const RightArrow = styled.button`
 position:absolute;
 top:calc(50% - 20px);
-right:-90px;
+right:-18px;
 
 background-color:transparent;
 border:1px solid ${mainTextColor};
 border-radius:50%;
 cursor:pointer;
 
-padding:24px 15px;
+padding:13px 4px;
+@media screen and (min-width:${tablet}){
+    right: -90px;
+    padding:24px 15px;
+}
 `
 

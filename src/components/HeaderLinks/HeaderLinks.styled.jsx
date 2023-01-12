@@ -21,6 +21,7 @@ list-style:none;
 display:flex;
 align-items:center;
 padding:0;
+margin:0;
 `
 
 export const Item = styled.li`

@@ -14,17 +14,17 @@ import {
 import Social from './Social/Social';
 import Contacts from 'components/Footer/Contacts/Contacts';
 
-const BurgerMenu = ({onClick}) => {
+const BurgerMenu = ({ onClick }) => {
   return (
     <div>
       {mobilePoint && (
         <Container>
           <LinksContainer>
-            <HeaderLinks />
             <LanguageSwitcher />
-            <BurgerIconClose id="close"  onClick={onClick}/>
+            <BurgerIconClose id="close" onClick={onClick} />
           </LinksContainer>
           <MenuContainer>
+            <HeaderLinks />
             <Navigation />
           </MenuContainer>
           <SocialContainer>
@@ -38,11 +38,11 @@ const BurgerMenu = ({onClick}) => {
       {tabletPoint && (
         <Container>
           <LinksContainer>
-            <HeaderLinks />
             <LanguageSwitcher />
-            <BurgerIconClose id="close" onClick={onClick}/>
+            <BurgerIconClose id="close" onClick={onClick} />
           </LinksContainer>
           <MenuContainer>
+            <HeaderLinks />
             <Navigation />
           </MenuContainer>
           <SocialContainer>
@@ -55,6 +55,6 @@ const BurgerMenu = ({onClick}) => {
 };
 
 BurgerMenu.propTypes = {
-  onClick:PropTypes.func.isRequired,
-}
+  onClick: PropTypes.func.isRequired,
+};
 export default BurgerMenu;

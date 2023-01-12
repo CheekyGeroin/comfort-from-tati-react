@@ -29,6 +29,9 @@ max-width: ${mobile};
     max-width: ${tablet};
  }
  @media screen and (min-width:${desktop}){
+  display:flex;
+  align-items:center;
+  justify-content:center;
     max-width: ${desktop};
  }
 `

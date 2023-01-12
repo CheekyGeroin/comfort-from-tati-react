@@ -5,6 +5,7 @@ import { cubicBezier, secondTextColor } from 'utils/variables';
 export const CatalogList = styled.ul`
   padding: 0;
   list-style: none;
+  overflow:hidden;
   @media screen and (max-width: 767px) {
     max-width: 315px;
     margin-left: auto;
@@ -143,7 +144,7 @@ export const FirstImageContainer = styled.div`
     height: 100%;
     z-index: 2;
     max-width: 315px;
-    max-height: 437px;
+    max-height: 465px;
 
     border-radius: 20px;
 
@@ -180,7 +181,7 @@ export const SecondImageContainer = styled.div`
     height: 100%;
     z-index: 2;
     width: 315px;
-    max-height: 177px;
+    max-height: 228px;
 
     border-radius: 20px;
 
@@ -218,7 +219,7 @@ export const ThirdImageContainer = styled.div`
     height: 100%;
     z-index: 2;
     width: 315px;
-    max-height: 281px;
+    max-height: 301px;
 
     border-radius: 20px;
 
@@ -250,7 +251,7 @@ export const FourthImageContainer = styled.div`
     height: 100%;
     z-index: 2;
     width: 315px;
-    max-height: 177px;
+    max-height: 228px;
 
     border-radius: 20px;
 
@@ -288,7 +289,7 @@ export const FifthImageContainer = styled.div`
     height: 100%;
     z-index: 2;
     max-width: 315px;
-    max-height: 130px;
+    max-height: 138px;
 
     border-radius: 20px;
 
