@@ -72,6 +72,7 @@ font-size: 28px;
   line-height: 1;
   font-family: ${secondFont};
   font-weight: ${mainFontWeight};
+  color:${mainTextColor};
   text-transform: capitalize;
   margin-bottom: 20px;
   @media screen and (min-width:${tablet}){

@@ -1,11 +1,12 @@
 import styled from '@emotion/styled';
+import { NavLink } from 'react-router-dom';
 import { desktop, tablet } from 'utils/breakpoints';
 import { cubicBezier, secondTextColor } from 'utils/variables';
 
 export const CatalogList = styled.ul`
   padding: 0;
   list-style: none;
-  overflow:hidden;
+  
   @media screen and (max-width: 767px) {
     max-width: 315px;
     margin-left: auto;
@@ -21,6 +22,10 @@ export const CatalogList = styled.ul`
     grid-template-rows: repeat(2, 270px);
     grid-column-gap: 14px;
   } ;
+
+  @media screen and (max-width:767px){
+    overflow:hidden;
+  }
 `;
 
 export const FirstItem = styled.li`
@@ -312,7 +317,7 @@ export const FifthImageContainer = styled.div`
   }
 `;
 
-export const Link = styled.a``;
+export const Link = styled(NavLink)``;
 
 export const ImageContainer = styled.div``;
 

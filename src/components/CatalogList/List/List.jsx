@@ -16,12 +16,14 @@ import {
   TextContainer,
   FifthImg,
 } from './List.styled';
+import { idList } from 'data/catalog/id';
 
 const List = () => {
+
   return (
     <CatalogList>
       <FirstItem>
-        <Link href='#'>
+        <Link to={`catalog/${idList[0].id}`} >
           <FirstImageContainer>
             <Img
               src={require('images/catalog/plaid-289w.jpg')}
@@ -36,7 +38,7 @@ const List = () => {
         </Link>
       </FirstItem>
       <SecondItem>
-        <Link href='#'>
+        <Link to={`catalog/${idList[2].id}`}>
           <SecondImageContainer>
             <Img
               src={require('images/catalog/bathroom-315w.jpg')}
@@ -51,7 +53,7 @@ const List = () => {
         </Link>
       </SecondItem>
       <ThirdItem>
-        <Link href='#'>
+        <Link to={`catalog/${idList[4].id}`}>
           <ThirdImageContainer>
             <Img
               src={require('images/catalog/individual-315w.jpg')}
@@ -66,7 +68,7 @@ const List = () => {
         </Link>
       </ThirdItem>
       <FourthItem>
-        <Link href='#'>
+        <Link to={`catalog/${idList[1].id}`}>
           <FourthImageContainer>
             <Img
               src={require('images/catalog/kids-315w.jpg')}
@@ -81,7 +83,7 @@ const List = () => {
         </Link>
       </FourthItem>
       <FifthItem>
-        <Link href='#'>
+        <Link to={`catalog/${idList[3].id}`}>
           <FifthImageContainer>
             <FifthImg
               src={require('images/catalog/colour-289w.jpg')}
