@@ -3,15 +3,19 @@ import CatalogPage from "pages/CatalogPage/CatalogPage";
 import CatalogPageEn from "pages/CatalogPageEn/CatalogPageEn";
 import ItemDetails from "pages/ItemDetails/ItemDetails";
 import MainPage from "pages/MainPage/MainPage";
-import { Route, Routes } from "react-router-dom";
+import { Route, Routes, useLocation } from "react-router-dom";
 import { ToastContainer } from "react-toastify";
 import AppBar from "./AppBar/AppBar";
 import Footer from "./Footer/Footer";
 
 export const App = () => {
+  const location = useLocation()
+  const catalogLocation = location.pathname.indexOf('catalog')
+  
+  
   return (
     <div>
-      <AppBar />
+      {catalogLocation !== -1 ? <AppBar accent={true} /> : <AppBar accent={false} />}
       <Routes>
         <Route path="/" element={<MainPage />} />
         <Route path="catalog/:catalogId" element={<CatalogPage />} />

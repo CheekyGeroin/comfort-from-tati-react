@@ -1,6 +1,6 @@
 import styled from "@emotion/styled";
 import { desktop, mobile, tablet } from 'utils/breakpoints';
-import { secondTextColor } from "utils/variables";
+import { mainTextColor, secondTextColor } from "utils/variables";
 
 export const Header = styled.header`
 position: absolute;
@@ -18,7 +18,19 @@ padding-bottom: 17px;
     padding-bottom: 35px;
   };
 `
-
+export const CatalogHeader = styled.header`
+position: relative;
+background-color:${mainTextColor};
+width:100%;
+@media screen and (min-width:${tablet}){
+  padding-top:51px;
+  padding-bottom:30px;
+}
+@media screen and (min-width:${desktop}){
+  padding-top:50px;
+  padding-bottom:29px;
+}
+`
 export const Container = styled.div`
 max-width: ${mobile};
  padding: 0 15px;
@@ -35,6 +47,7 @@ max-width: ${mobile};
     max-width: ${desktop};
  }
 `
+
 export const MenuContainer = styled.div`
 display:flex;
 align-items:center;
