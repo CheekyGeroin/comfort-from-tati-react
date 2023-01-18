@@ -6,7 +6,7 @@ const CatalogNavigation = () => {
       <List>
         {idList.map(({ id, text }) => (
           <Item key={id}>
-            <Link to={`catalog/${id}`}>{text}</Link>
+            <Link to={`${id}`}>{text}</Link>
           </Item>
         ))}
       </List>

@@ -1,9 +1,18 @@
 import styled from "@emotion/styled";
 import { NavLink } from "react-router-dom";
-import { desktop } from "utils/breakpoints";
+import { desktop, tablet } from "utils/breakpoints";
 import { mainFont, mainFontWeight } from "utils/variables";
 
-export const Container = styled.div``
+export const Container = styled.div`
+@media screen and (min-width:${tablet}){
+    margin-top:40px;
+    margin-bottom:50px;
+}
+@media screen and (min-width:${desktop}){
+    margin-top:71px;
+    margin-bottom:40px;
+}
+`
 
 export const List = styled.ul`
 list-style:none;
