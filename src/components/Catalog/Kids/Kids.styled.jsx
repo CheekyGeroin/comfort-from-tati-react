@@ -1,7 +1,7 @@
 import styled from '@emotion/styled';
 import { NavLink } from 'react-router-dom';
 import { desktop, mobile, tablet } from 'utils/breakpoints';
-import { btnBgColor, hoverBtnColor, mainFontWeight, mainTextColor, secondFont } from 'utils/variables';
+import { btnBgColor, cubicBezier, hoverBtnColor, mainFontWeight, mainTextColor, secondFont } from 'utils/variables';
 
 export const Container = styled.div`
   max-width: ${mobile};
@@ -31,10 +31,17 @@ export const Title = styled.h1`
   color: ${mainTextColor};
   font-family: ${secondFont};
   font-weight: ${mainFontWeight};
+  margin:0;
+  padding:0;
+  text-transform:capitalize;
+  @media screen and (min-width: ${tablet}) {
+    font-size: 40px;
+    line-height: 1.25;
+    letter-spacing: 0.03em;
+  }
   @media screen and (min-width: ${desktop}) {
     font-size: 78px;
     line-height: 1.28;
-    letter-spacing: 0.03em;
   }
 `;
 
@@ -46,7 +53,7 @@ export const List = styled.ul`
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bootom: 60px;
+    margin-bottom: 60px;
   }
   @media screen and (min-width: ${desktop}) {
     margin-bottom: 80px;
@@ -76,12 +83,17 @@ align-items:center;
 justify-content:center;
 border:none;
 border-radius:0 0 20px 20px;
-@media screen and (min-width:${desktop}){
-    padding: 15px 45px 18px 50px;
-    background-color:${btnBgColor};
+background-color:${btnBgColor};
+    transition: background-color 250ms ${cubicBezier};
     :hover, :focus {
         background-color:${hoverBtnColor};
     }
+@media screen and (min-width:${tablet}){
+  padding:13px 24px 17px 24px;
+}
+@media screen and (min-width:${desktop}){
+    padding: 15px 45px 18px 50px;
+    
 }`;
 
 export const Text = styled.p`

@@ -1,7 +1,7 @@
 import BasketPage from "pages/BasketPage/BasketPage";
 import CatalogPage from "pages/CatalogPage/CatalogPage";
 import CatalogPageEn from "pages/CatalogPageEn/CatalogPageEn";
-import ItemDetails from "pages/ItemDetails/ItemDetails";
+import ItemDetails from "components/ItemDetails/ItemDetails";
 import MainPage from "pages/MainPage/MainPage";
 import { Route, Routes, useLocation } from "react-router-dom";
 import { ToastContainer } from "react-toastify";
@@ -33,12 +33,9 @@ export const App = () => {
           <Route path="bathroom"  element={<Bathroom/>}>
             <Route path=":itemId" element={<ItemDetails/>}/>
           </Route>
-          <Route path="colour"  element={<Colour/>}>
-            <Route path=":itemId" element={<ItemDetails/>}/>
-          </Route>
+          <Route path="colour"  element={<Colour/>} />
           <Route path="individual" element={<Individual/>}/>
         </Route>
-        <Route path="catalog/:catalogId/:itemId" element={<ItemDetails/>} />
         <Route path="en" element={<CatalogPageEn />} />
         <Route path="basket" element={<BasketPage />} />
       </Routes>

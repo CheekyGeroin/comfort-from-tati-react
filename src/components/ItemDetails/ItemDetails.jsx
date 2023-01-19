@@ -1,0 +1,34 @@
+import { getPlaidById } from 'data/catalog/db';
+import { useState, useEffect } from 'react';
+import { useParams } from 'react-router-dom';
+import ImgSlider from './Entire/ImgSlider/ImgSlider';
+import Info from './Entire/Info/Info';
+import {
+  Container,
+  EntireContainer,
+  OtherContainer,
+} from './ItemDetails.styled';
+
+const ItemDetails = () => {
+  const { itemId } = useParams();
+  const [plaid, setPlaid] = useState(null);
+
+  useEffect(() => {
+    getPlaidById(itemId).then(setPlaid);
+  }, [itemId]);
+
+  if (!plaid) {
+    return null;
+    }
+
+  return (
+    <Container>
+      <EntireContainer>
+        <ImgSlider data={plaid} />
+        <Info data={plaid} />
+      </EntireContainer>
+      <OtherContainer></OtherContainer>
+    </Container>
+  );
+};
+export default ItemDetails;

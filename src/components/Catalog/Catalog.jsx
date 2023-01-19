@@ -1,12 +1,20 @@
-import CatalogNavigation from "components/CatalogNavigation/CatalogNavigation"
+import CatalogNavigation from 'components/CatalogNavigation/CatalogNavigation';
+import ItemDetails from 'components/ItemDetails/ItemDetails';
+import Btn from './Btn/Btn';
+import { NavContainer } from './Catalog.styled';
 
 const Catalog = () => {
-    return (
-        <div>
-            <CatalogNavigation />
-            
-        </div>
-    )
-}
 
-export default Catalog
+  return (
+    <div>
+      <NavContainer>
+        <Btn />
+        <CatalogNavigation />
+      </NavContainer>
+      
+      <ItemDetails/>
+    </div>
+  );
+};
+
+export default Catalog;

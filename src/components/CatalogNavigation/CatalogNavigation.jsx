@@ -1,6 +1,7 @@
 import { idList } from 'data/catalog/id';
 import { Container, List, Item, Link } from './CatalogNavigation.styled';
 const CatalogNavigation = () => {
+
   return (
     <Container>
       <List>

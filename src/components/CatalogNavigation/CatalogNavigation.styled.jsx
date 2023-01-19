@@ -20,10 +20,26 @@ margin:0;
 padding:0;
 display:flex;
 align-items:center;
-justify-content: center;
+justify-content: flex-start;
+@media screen and (min-width:${tablet}) and (max-width:1279px){
+    flex-wrap:wrap;
+}
+@media screen and (min-width:${desktop}){
+    justify-content: center;
+}
 `
 
 export const Item = styled.li`
+@media screen and (min-width:${tablet}){
+    :not(:last-child){
+        margin-right:40px;
+    }
+}
+@media screen and (min-width:${tablet}) and (max-width:1279px){
+    :last-child{
+        margin-top:10px;
+    }
+}
 @media screen and (min-width:${desktop}){
     :not(:last-child){
         margin-right:72px;
@@ -36,8 +52,11 @@ color:#377384;
 font-family: ${mainFont};
 font-weight: ${mainFontWeight};
 letter-spacing: 0.04em;
-@media screen and (min-width:${desktop}){
+@media screen and (min-width:${tablet}){
     font-size: 22px;
 line-height: 1.14;
+&.active{
+    text-decoration:underline;
+}
 }
 `
