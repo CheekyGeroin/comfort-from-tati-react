@@ -1,11 +1,15 @@
-import ColourList from "../ColourList/ColourList"
-import { colourBath } from "data/catalog/colour"
+import ColourList from '../ColourList/ColourList';
+import { colourBath } from 'data/catalog/colour';
+import { Container, Subtitle } from './BathColour.styled';
 const BathColour = () => {
-    return (
-        <div>
-            <ColourList data={colourBath} />
-        </div>
-    )
-}
+  return (
+    <div>
+      <Container>
+        <Subtitle>Кольори для килимків </Subtitle>
+      </Container>
+      <ColourList data={colourBath} />
+    </div>
+  );
+};
 
-export default BathColour
+export default BathColour;
