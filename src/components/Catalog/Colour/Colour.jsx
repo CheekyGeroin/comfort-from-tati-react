@@ -1,14 +1,15 @@
 import BathColour from "./BathColour/BathColour"
 import KidsColour from "./KidsColour/KidsColour"
 import PlaidColour from "./PlaidColour/PlaidColour"
+import { Container } from "./Colour.styled"
 
 const Colour = () => {
     return (
-        <div>
+        <Container>
         <PlaidColour />
         <KidsColour />
         <BathColour/>
-    </div>
+    </Container>
     )
 }
 export default Colour

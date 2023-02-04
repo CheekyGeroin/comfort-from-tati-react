@@ -30,6 +30,7 @@ justify-content: flex-start;
 `
 
 export const Item = styled.li`
+
 @media screen and (min-width:${tablet}){
     :not(:last-child){
         margin-right:40px;

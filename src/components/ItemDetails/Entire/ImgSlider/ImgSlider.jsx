@@ -3,7 +3,7 @@ import 'pure-react-carousel/dist/react-carousel.es.css';
 // import PropTypes from 'prop-types';
 
 const ImgSlider = ({ data }) => {
-    console.log(data)
+  const images = data.entires;
   return (
     <CarouselProvider
       naturalSlideWidth={100}
@@ -11,10 +11,16 @@ const ImgSlider = ({ data }) => {
       totalSlides={4}
     >
       <Slider>
-        <Slide index={0}>I am the first Slide.</Slide>
-        <Slide index={1}>I am the second Slide.</Slide>
-        <Slide index={2}>I am the third Slide.</Slide>
-        <Slide index={3}>I am the fourth Slide.</Slide>
+        {images.map(item => (
+          <Slide key={item.id}>
+            <img
+              src={item.imgDesk}
+              alt={data.alt}
+              srcSet={`${item.imgDesk} 585w, ${item.imgDesk2x} 1170w`}
+              sizes="(min-width:1280px) 585px, 100vw"
+            />
+          </Slide>
+        ))}
       </Slider>
     </CarouselProvider>
   );
@@ -24,4 +30,4 @@ const ImgSlider = ({ data }) => {
 //   data: PropTypes.objectOf(PropTypes.exact({})),
 // };
 
-export default ImgSlider
+export default ImgSlider;

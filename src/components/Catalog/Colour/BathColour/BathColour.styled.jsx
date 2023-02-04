@@ -1,5 +1,5 @@
 import styled from "@emotion/styled";
-import { desktop } from "utils/breakpoints";
+import { desktop, tablet } from "utils/breakpoints";
 import { mainFontWeight, mainTextColor, secondFont } from "utils/variables";
 
 export const Container = styled.div`
@@ -13,6 +13,9 @@ margin:0;
 padding:0;
 color:${mainTextColor};
 
+@media screen and (min-width:${tablet}){
+    
+}
 @media screen and (min-width:${desktop}){
     font-size:70px;
     line-height:1.28;
