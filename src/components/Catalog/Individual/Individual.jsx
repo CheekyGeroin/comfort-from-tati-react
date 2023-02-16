@@ -1,4 +1,4 @@
-import { Container, Form, FormContainer, Input, Item, Label, List, Option, Select, SelectContainer, SelectItem, SelectList, Textarea, Title, TitleContainer } from "./Individual.styled";
+import { Container, SelectForm, Form, FormContainer, Input, Item, Label, List, Option, Select, SelectContainer, SelectItem, SelectList, Textarea, Title, TitleContainer } from "./Individual.styled";
 
 const Individual = () => {
   return (
@@ -7,7 +7,7 @@ const Individual = () => {
         <TitleContainer>
           <Title>Найменування товару</Title>
         </TitleContainer>
-        <Form>
+        <SelectForm>
           <SelectList>
             <SelectItem>
               <Label>
@@ -57,11 +57,11 @@ const Individual = () => {
             <SelectItem>
               <Label>
                 Побажання
-                <Textarea cols="30" rows="10"></Textarea>
+                <Textarea cols="55" rows="10"></Textarea>
               </Label>
             </SelectItem>
           </SelectList>
-        </Form>
+        </SelectForm>
       </SelectContainer>
       <FormContainer>
         <TitleContainer>

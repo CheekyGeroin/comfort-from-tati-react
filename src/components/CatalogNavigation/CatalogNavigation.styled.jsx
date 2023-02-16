@@ -5,12 +5,12 @@ import { mainFont, mainFontWeight } from "utils/variables";
 
 export const Container = styled.div`
 @media screen and (min-width:${tablet}){
-    margin-top:40px;
-    margin-bottom:50px;
+    padding-top:40px;
+    padding-bottom:50px;
 }
 @media screen and (min-width:${desktop}){
-    margin-top:71px;
-    margin-bottom:40px;
+    padding-top:71px;
+    padding-bottom:40px;
 }
 `
 
