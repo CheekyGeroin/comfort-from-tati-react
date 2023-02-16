@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/comfort-from-tati-react/static/css/main.6906c0de.css",
-    "main.js": "/comfort-from-tati-react/static/js/main.2f369cb9.js",
+    "main.js": "/comfort-from-tati-react/static/js/main.def57c95.js",
     "static/media/20221016-133440-223.mp4": "/comfort-from-tati-react/static/media/20221016-133440-223.2043641f2c6a2fcd6407.mp4",
     "static/media/20221016-133440-223.webm": "/comfort-from-tati-react/static/media/20221016-133440-223.12896e037e085b2ab1c9.webm",
     "static/media/blue-fourth-desk@2x.jpg": "/comfort-from-tati-react/static/media/blue-fourth-desk@2x.80d255dc5fa7d830a040.jpg",
@@ -245,10 +245,10 @@
     "index.html": "/comfort-from-tati-react/index.html",
     "static/media/arrow.svg": "/comfort-from-tati-react/static/media/arrow.f513c4668035047b2d2e0db26e7ddc57.svg",
     "main.6906c0de.css.map": "/comfort-from-tati-react/static/css/main.6906c0de.css.map",
-    "main.2f369cb9.js.map": "/comfort-from-tati-react/static/js/main.2f369cb9.js.map"
+    "main.def57c95.js.map": "/comfort-from-tati-react/static/js/main.def57c95.js.map"
   },
   "entrypoints": [
     "static/css/main.6906c0de.css",
-    "static/js/main.2f369cb9.js"
+    "static/js/main.def57c95.js"
   ]
 }
