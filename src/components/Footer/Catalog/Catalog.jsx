@@ -1,30 +1,28 @@
-import { Container, Item, Link, InnerLink, List, Title } from './Catalog.styled';
+import { idList } from 'data/catalog/id';
+import {
+  Container,
+  Item,
+  Link,
+  InnerLink,
+  List,
+  Title,
+} from './Catalog.styled';
 
 const Catalog = () => {
   return (
     <Container>
       <Title>
-        <Link href='#catalog'>Каталог</Link>
+        <InnerLink href="#catalog">Каталог</InnerLink>
       </Title>
       <List>
-        <Item>
-          <InnerLink>Пледи</InnerLink>
-        </Item>
-        <Item>
-          <InnerLink>Дитячі пледи</InnerLink>
-        </Item>
-        <Item>
-          <InnerLink>Килимки для ванни</InnerLink>
-        </Item>
-        <Item>
-          <InnerLink>Кольори</InnerLink>
-        </Item>
-        <Item>
-          <InnerLink>Індивідуальне замовлення</InnerLink>
-        </Item>
+        {idList.map(({ text, id }) => (
+          <Item key={id}>
+            <Link to={`catalog/${id}`}>{text}</Link>
+          </Item>
+        ))}
       </List>
     </Container>
   );
 };
 
-export default Catalog
+export default Catalog;

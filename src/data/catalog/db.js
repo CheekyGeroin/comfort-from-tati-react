@@ -34,6 +34,10 @@ const db = {
           imgDesk2x: `${require('images/catalog-list/entires/blue/blue-fifth-desk@2x.jpg')}`,
         },
       ],
+      basketInfo: {
+        title: 'Плед плетінка',
+        price: '2600 ₴',
+      },
     },
     {
       id: 'honeycombs_Plaid',
@@ -69,6 +73,10 @@ const db = {
           imgDesk2x: `${require('images/catalog-list/entires/yellow/yellow-fifth-desk@2x.jpg')}`,
         },
       ],
+      basketInfo: {
+        title: 'Плед соти',
+        price: '2600 ₴',
+      },
     },
     {
       id: 'heart_Plaid',
@@ -104,6 +112,10 @@ const db = {
           imgDesk2x: `${require('images/catalog-list/entires/pink/pink-fifth-desk@2x.jpg')}`,
         },
       ],
+      basketInfo: {
+        title: 'Плед серденько',
+        price: '2799 ₴',
+      },
     },
 
     {
@@ -140,6 +152,10 @@ const db = {
           imgDesk2x: `${require('images/catalog-list/entires/kids/kids-fifth-desk@2x.jpg')}`,
         },
       ],
+      basketInfo: {
+        title: 'Дитячий плед',
+        price: '650 ₴',
+      },
     },
 
     {
@@ -171,6 +187,10 @@ const db = {
           imgDesk2x: `${require('images/catalog-list/entires/bath/bath-fourth-desk@2x.jpg')}`,
         },
       ],
+      basketInfo: {
+        title: 'Килим у ванну',
+        price: '999 ₴',
+      },
     },
   ],
 };

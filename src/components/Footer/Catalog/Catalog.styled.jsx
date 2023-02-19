@@ -16,7 +16,7 @@ margin:0;
  margin-bottom: 12px;
  `
 
-export const Link = styled.a`
+export const InnerLink = styled.a`
  color: ${secondTextColor};
     text-decoration: underline;
     font-weight: ${footerAccentFontWeight};
@@ -24,7 +24,7 @@ export const Link = styled.a`
     line-height: 1.36;
 `
 
-export const InnerLink = styled(NavLink)`
+export const Link = styled(NavLink)`
  color: ${secondTextColor};
     font-size: 22px;
     line-height: 1.14;

@@ -9,7 +9,7 @@ export const idList = [
   },
   {
     id: 'bathroom',
-    text: 'Килим у ванну',
+    text: 'Килимки для ванни',
   },
   {
     id: 'colour',

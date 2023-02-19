@@ -36,7 +36,7 @@ const Info = ({ data }) => {
             </List>
           </TextContainer>
           <BtnContainer>
-            <Link>Оформити замовлення</Link>
+            <Link to="basket">Оформити замовлення</Link>
           </BtnContainer>
         </InfoContainer>
     )
