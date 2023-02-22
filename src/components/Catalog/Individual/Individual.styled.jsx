@@ -1,7 +1,7 @@
 import styled from '@emotion/styled';
 import { NavLink } from 'react-router-dom';
 import { desktop, mobile, tablet } from 'utils/breakpoints';
-import { mainTextColor, secondFont } from 'utils/variables';
+import { mainFont, mainFontWeight, mainTextColor, secondFont } from 'utils/variables';
 
 export const Container = styled.div`
   max-width: ${mobile};
@@ -40,7 +40,6 @@ export const Title = styled.h2`
     line-height: 1.28;
   }
 `;
-export const SelectForm = styled.form``;
 
 export const Form = styled.form``;
 
@@ -66,7 +65,10 @@ export const SelectItem = styled.li`
   }
 `;
 
-export const FormContainer = styled.div``;
+export const FormContainer = styled.div`
+@media screen and (min-width:${desktop}){
+  margin-bottom: 80px;
+}`;
 
 export const List = styled.ul`
 list-style:none;
@@ -105,12 +107,33 @@ background-color:#EFEFEF;
     padding: 21px;
 }`;
 
-export const Option = styled.option``;
+export const Option = styled.option`
+font-family: ${mainFont};
+font-style: normal;
+font-weight: ${mainFontWeight};
+font-size: 22px;
+line-height: 1.14;
+letter-spacing: 0.04em;
+font-variant: small-caps;
+color:${mainTextColor};
+border-bottom:1px solid ${mainTextColor};
+`;
 
 export const Input = styled.input`
+font-family:${mainFont};
+font-style: normal;
+font-weight: ${mainFontWeight};
+font-size: 22px;
+line-height: 1.14;
+
+letter-spacing: 0.04em;
+font-variant: small-caps;
+
+color: #4B8798;
 background-color:#EFEFEF;
 border: 1px solid ${mainTextColor};
 border-radius:5px;
+
 @media screen and (min-width:${desktop}){
     max-width:405px;
     padding: 21px;
@@ -124,3 +147,37 @@ export const Textarea = styled.textarea`
 `;
 
 export const Link = styled(NavLink)``;
+
+export const ButtonContainer = styled.div``
+
+export const ButtonList = styled.ul`
+list-style:none;
+display:flex;
+align-items:center;
+justify-content: space-between;
+@media screen and (min-width:${desktop}){
+  margin-bottom:80px;
+}`
+
+export const ButtonItem = styled.li`
+
+}`
+
+export const Btn = styled.button`
+font-family:${secondFont};
+font-style: normal;
+font-weight: ${mainFontWeight};
+font-size: 40px;
+line-height: 1.25;
+
+letter-spacing: 0.03em;
+text-transform: capitalize;
+background-color: ${props => props.bgColor};
+border:none;
+border-radius:35px 5px;
+color:${mainTextColor};
+box-shadow: ${props=> props.boxShadow};
+@media screen and (min-width:${desktop}){
+  padding:12px 40px;
+}
+`
