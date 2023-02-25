@@ -8,6 +8,8 @@ flex-wrap:wrap;
 align-items:center;
 margin:0;
 padding:0;
+margin: -3px;
+margin-bottom:20px;
 
 @media screen and (min-width:${tablet}){
     margin:-5px;
@@ -22,9 +24,13 @@ padding:0;
 export const Item = styled.li`
 margin:0;
 padding:0;
+display:flex;
+flex-basis: calc((100% - 2 * 6px) / 2);
+margin:3px;
+
 
 @media screen and (min-width:${tablet}){
-    display:flex;
+    
     flex-basis: calc((100% - 3 * 10px) / 3);
     margin:5px;
 }

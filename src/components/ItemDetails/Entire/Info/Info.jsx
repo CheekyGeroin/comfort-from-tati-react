@@ -1,4 +1,6 @@
 // import PropTypes from 'prop-types';
+import { useDispatch } from 'react-redux'
+import { addItem } from 'redux/basketSlice'
 import {
   AccentContainer,
   InfoContainer,
@@ -12,8 +14,11 @@ import {
   Title,
   TitleContainer, Span} from './Info.styled'
 const Info = ({ data }) => {
+  const dispatch = useDispatch()
+
   
-  const {title, description, size, price} = data
+  const { title, description, size, price, } = data
+  
     return (
         <InfoContainer>
           <TitleContainer>
@@ -36,23 +41,12 @@ const Info = ({ data }) => {
             </List>
           </TextContainer>
           <BtnContainer>
-            <Link to="basket">Оформити замовлення</Link>
+            <Link to="basket" onClick={()=>{dispatch(addItem(title, price))}}>Оформити замовлення</Link>
           </BtnContainer>
         </InfoContainer>
     )
 }
 
-// Info.propTypes = {
-//   data: PropTypes.objectOf(
-//     PropTypes.exact({
-//      id:PropTypes.string.isRequired,
-//      title: PropTypes.string.isRequired,
-//       description: PropTypes.string.isRequired,
-//       size: PropTypes.string.isRequired,
-//       price: PropTypes.string.isRequired,
-//    }),
-//   ),
 
-// }
 
 export default Info

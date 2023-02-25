@@ -28,6 +28,9 @@ const Individual = () => {
   const [size, setSize] = useState('')
   const [color, setColor] = useState('')
   const [comment, setComment] = useState('')
+  const [name, setName] = useState('')
+  const [number, setNumber] = useState('')
+  const [nickname, setNickname] = useState('')
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -47,6 +50,15 @@ const Individual = () => {
       case 'comment':
         setComment(value)
         break;
+      case 'name':
+        setName(value)
+        break;
+      case 'number':
+        setNumber(value)
+        break;
+        case 'nickname':
+        setNickname(value)
+        break;
       default:
         return;
     }
@@ -55,13 +67,30 @@ const Individual = () => {
     e.preventDefault()
    
     console.log(category)
-    console.log(type)
+    if (type !== '') {
+      console.log(type)
+    }
     console.log(size)
     console.log(color)
     console.log(comment)
+    console.log(name)
+    console.log(number)
+    console.log(nickname)
 
-    
+    reset()
   }
+
+  const reset = () => {
+    setCategory('')
+    setType('')
+    setSize('')
+    setColor('')
+    setComment('')
+    setName('')
+    setNumber('')
+    setNickname('')
+  }
+  
   return (
     <Container>
       <Form onSubmit={handleSubmit}>
@@ -76,20 +105,26 @@ const Individual = () => {
                 <Select name="category"onChange={handleChange}>
                   <Option value="-"> </Option>
                   <Option value="plaids">Плед</Option>
-                  <Option value="kids">Килимок у ванну</Option>
-                  <Option value="bathroom">Дитячий плед</Option>
+                  <Option value="bathroom">Килимок у ванну</Option>
+                  <Option value="kids">Дитячий плед</Option>
                 </Select>
               </Label>
             </SelectItem>
             <SelectItem>
               <Label>
                 Плетіння
-                <Select name="type"onChange={handleChange}>
+                {category === 'bathroom'&& <Select name="type"onChange={handleChange} disabled>
                   <Option value="-"> </Option>
                   <Option value="braided">Плетінка</Option>
                   <Option value="heart">Серденько</Option>
                   <Option value="honey">Соти</Option>
-                </Select>
+                </Select>}
+                {category !== 'bathroom' && <Select name="type"onChange={handleChange} >
+                  <Option value="-"> </Option>
+                  <Option value="braided">Плетінка</Option>
+                  <Option value="heart">Серденько</Option>
+                  <Option value="honey">Соти</Option>
+                </Select>}
               </Label>
             </SelectItem>
             <SelectItem>
@@ -134,7 +169,7 @@ const Individual = () => {
             <Item>
               <Label>
                 Номер телефону
-                <Input type="tel" name="phone" onChange={handleChange}/>
+                <Input type="tel" name="number" onChange={handleChange}/>
               </Label>
             </Item>
             <Item>

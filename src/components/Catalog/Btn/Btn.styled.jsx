@@ -3,9 +3,10 @@ import { NavLink } from 'react-router-dom';
 import { desktop, tablet } from 'utils/breakpoints';
 
 export const Svg = styled.svg`
+width:44px;
+height:20px;
   @media screen and (min-width: ${tablet}) {
     width: 60px;
-    height: 20px;
   }
   @media screen and (min-width: ${desktop}) {
     width: 80px;

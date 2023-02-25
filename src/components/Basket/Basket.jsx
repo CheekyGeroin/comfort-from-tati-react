@@ -1,3 +1,5 @@
+import BasketItem from "./BasketItem/BasketItem"
+
 const Basket = () => {
     
     return (
@@ -7,7 +9,7 @@ const Basket = () => {
             </div>
 
             <div>
-
+                <BasketItem/>
             </div>
         </div>
     )

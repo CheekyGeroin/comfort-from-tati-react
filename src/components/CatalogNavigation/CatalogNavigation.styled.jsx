@@ -4,14 +4,7 @@ import { desktop, tablet } from "utils/breakpoints";
 import { mainFont, mainFontWeight } from "utils/variables";
 
 export const Container = styled.div`
-@media screen and (min-width:${tablet}){
-    padding-top:40px;
-    padding-bottom:50px;
-}
-@media screen and (min-width:${desktop}){
-    padding-top:71px;
-    padding-bottom:40px;
-}
+
 `
 
 export const List = styled.ul`
@@ -21,7 +14,7 @@ padding:0;
 display:flex;
 align-items:center;
 justify-content: flex-start;
-@media screen and (min-width:${tablet}) and (max-width:1279px){
+@media screen and (max-width:1279px){
     flex-wrap:wrap;
 }
 @media screen and (min-width:${desktop}){
@@ -30,6 +23,16 @@ justify-content: flex-start;
 `
 
 export const Item = styled.li`
+
+:not(:last-child){
+    margin-right:10px;
+}
+@media screen and (max-width: 767px){
+    :nth-of-type(3){
+        margin-top:6px;
+        margin-bottom:6px;
+    }
+}
 
 @media screen and (min-width:${tablet}){
     :not(:last-child){
@@ -53,11 +56,12 @@ color:#377384;
 font-family: ${mainFont};
 font-weight: ${mainFontWeight};
 letter-spacing: 0.04em;
-@media screen and (min-width:${tablet}){
-    font-size: 22px;
-line-height: 1.14;
 &.active{
     text-decoration:underline;
 }
+@media screen and (min-width:${tablet}){
+    font-size: 22px;
+line-height: 1.14;
+
 }
 `
