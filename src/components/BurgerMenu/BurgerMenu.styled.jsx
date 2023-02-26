@@ -7,6 +7,7 @@ position:absolute;
 top:0;
 right:0;
 width:320px;
+z-index:2;
 max-height:691px;
 background-color:${burgerBgColor};
 padding:105px 0 105px 30px;
