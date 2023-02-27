@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/comfort-from-tati-react/static/css/main.6906c0de.css",
-    "main.js": "/comfort-from-tati-react/static/js/main.0d94cd17.js",
+    "main.js": "/comfort-from-tati-react/static/js/main.eb326f67.js",
     "static/media/20221016-133440-223.mp4": "/comfort-from-tati-react/static/media/20221016-133440-223.2043641f2c6a2fcd6407.mp4",
     "static/media/20221016-133440-223.webm": "/comfort-from-tati-react/static/media/20221016-133440-223.12896e037e085b2ab1c9.webm",
     "static/media/blue-fourth-desk@2x.jpg": "/comfort-from-tati-react/static/media/blue-fourth-desk@2x.80d255dc5fa7d830a040.jpg",
@@ -120,12 +120,12 @@
     "static/media/blue-plaid-tabl.jpg": "/comfort-from-tati-react/static/media/blue-plaid-tabl.04570f78cf0b6317545f.jpg",
     "static/media/sixty_image_desk@2x.jpg": "/comfort-from-tati-react/static/media/sixty_image_desk@2x.34ebd8580aafd71baad5.jpg",
     "static/media/fifth_image_desk@2x.jpg": "/comfort-from-tati-react/static/media/fifth_image_desk@2x.e11d8e3caaa2866b7ed7.jpg",
-    "static/media/ten_image-desk@2x.jpg": "/comfort-from-tati-react/static/media/ten_image-desk@2x.4163c585a703d3b8f9e8.jpg",
+    "static/media/ten_image-desk@2x.jpg": "/comfort-from-tati-react/static/media/ten_image-desk@2x.cedf5bb934b42800dce0.jpg",
     "static/media/fourtyfour_image_desk@2x.jpg": "/comfort-from-tati-react/static/media/fourtyfour_image_desk@2x.760ec60b516562ae9c4c.jpg",
     "static/media/fiftytwo_image_desk@2x.jpg": "/comfort-from-tati-react/static/media/fiftytwo_image_desk@2x.23adaf2297ab23a491c9.jpg",
     "static/media/fourtythree_image_desk@2x.jpg": "/comfort-from-tati-react/static/media/fourtythree_image_desk@2x.911aded2cf1ca07dab4c.jpg",
     "static/media/sixtytwo_image_desk@2x.jpg": "/comfort-from-tati-react/static/media/sixtytwo_image_desk@2x.eb1044de8669f295bec6.jpg",
-    "static/media/twelwe_image_desk@2x.jpg": "/comfort-from-tati-react/static/media/twelwe_image_desk@2x.6b47afaf4725fdfd076b.jpg",
+    "static/media/twelwe_image_desk@2x.jpg": "/comfort-from-tati-react/static/media/twelwe_image_desk@2x.6c1908053eebfa9502b4.jpg",
     "static/media/fiftynine_image_desk@2x.jpg": "/comfort-from-tati-react/static/media/fiftynine_image_desk@2x.7bec8c7d030e6c363f59.jpg",
     "static/media/fiftyfive_image_desk@2x.jpg": "/comfort-from-tati-react/static/media/fiftyfive_image_desk@2x.498c9c8696d4f7676567.jpg",
     "static/media/fiftythree_image_desk@2x.jpg": "/comfort-from-tati-react/static/media/fiftythree_image_desk@2x.2ed756ae29a4462d3b59.jpg",
@@ -136,6 +136,7 @@
     "static/media/eightyeight_image_desk@2x.jpg": "/comfort-from-tati-react/static/media/eightyeight_image_desk@2x.c49ce728549cd73e9589.jpg",
     "static/media/sixtyfive_image_desk@2x.jpg": "/comfort-from-tati-react/static/media/sixtyfive_image_desk@2x.c38f3447f078a9142483.jpg",
     "static/media/eightyfour_image_desk@2x.jpg": "/comfort-from-tati-react/static/media/eightyfour_image_desk@2x.58a6e3173c6afb6226e2.jpg",
+    "static/media/blue-plaid@2x-mob.jpg": "/comfort-from-tati-react/static/media/blue-plaid@2x-mob.ee44146f5c2546ba161a.jpg",
     "static/media/fourtynine_image_desk@2x.jpg": "/comfort-from-tati-react/static/media/fourtynine_image_desk@2x.e845db06b09dcf042664.jpg",
     "static/media/bathroom-carpet-tabl.jpg": "/comfort-from-tati-react/static/media/bathroom-carpet-tabl.fecd00895c0a6b6db8ae.jpg",
     "static/media/seventy_image_desk@2x.jpg": "/comfort-from-tati-react/static/media/seventy_image_desk@2x.ca33e72867623da003bd.jpg",
@@ -157,6 +158,7 @@
     "static/media/twentyeight_image_desk@2x.jpg": "/comfort-from-tati-react/static/media/twentyeight_image_desk@2x.b9d2f155b4c62a1102b8.jpg",
     "static/media/thirteen_image_desk@2x.jpg": "/comfort-from-tati-react/static/media/thirteen_image_desk@2x.ba8eb13b8eebe0a2c3a2.jpg",
     "static/media/eighth_image_desk@2x.jpg": "/comfort-from-tati-react/static/media/eighth_image_desk@2x.a390ae0f3c637e5ad7da.jpg",
+    "static/media/list-yellow-plaid@2x-mob.jpg": "/comfort-from-tati-react/static/media/list-yellow-plaid@2x-mob.b3b3472c24a462152725.jpg",
     "static/media/hero-mob.jpg": "/comfort-from-tati-react/static/media/hero-mob.9c71ae6a0cbc1eaf3bcb.jpg",
     "static/media/onehundredten_image_desk@2x.jpg": "/comfort-from-tati-react/static/media/onehundredten_image_desk@2x.e0342fac25cfd2d0a8b2.jpg",
     "static/media/fiftyone_image_desk@2x.jpg": "/comfort-from-tati-react/static/media/fiftyone_image_desk@2x.8cc32ccf1f39079ae08d.jpg",
@@ -164,9 +166,11 @@
     "static/media/eightytwo_image_desk@2x.jpg": "/comfort-from-tati-react/static/media/eightytwo_image_desk@2x.0cebdfdc2b6529b0ba13.jpg",
     "static/media/onehundredthree_image_desk@2x.jpg": "/comfort-from-tati-react/static/media/onehundredthree_image_desk@2x.362a984b3585e67d1772.jpg",
     "static/media/onehundrednine_image_desk@2x.jpg": "/comfort-from-tati-react/static/media/onehundrednine_image_desk@2x.2dcf24fd66a4ca118d01.jpg",
+    "static/media/bathroom-carpet@2x-mob.jpg": "/comfort-from-tati-react/static/media/bathroom-carpet@2x-mob.9ae1b9b6921b1ccabee5.jpg",
     "static/media/ninetyseven_image_desk@2x.jpg": "/comfort-from-tati-react/static/media/ninetyseven_image_desk@2x.92f0241f5960c98530d4.jpg",
     "static/media/fourtytwo_image_desk@2x.jpg": "/comfort-from-tati-react/static/media/fourtytwo_image_desk@2x.61fd019966da6aae7548.jpg",
     "static/media/ninetyfive_image_desk@2x.jpg": "/comfort-from-tati-react/static/media/ninetyfive_image_desk@2x.0a2718c64b2f5264e098.jpg",
+    "static/media/list-pink-plaid@2x-mob.jpg": "/comfort-from-tati-react/static/media/list-pink-plaid@2x-mob.b430b57047f587960058.jpg",
     "static/media/kids-plaid-tabl.jpg": "/comfort-from-tati-react/static/media/kids-plaid-tabl.454a84e323143edb7589.jpg",
     "static/media/eightyone_image_desk@2x.jpg": "/comfort-from-tati-react/static/media/eightyone_image_desk@2x.a1add4a25e828d1c2eae.jpg",
     "static/media/individual-315w.jpg": "/comfort-from-tati-react/static/media/individual-315w.6e995cd5503a635cde5f.jpg",
@@ -191,6 +195,7 @@
     "static/media/twentythree_image_desk@2x.jpg": "/comfort-from-tati-react/static/media/twentythree_image_desk@2x.ecddc9bab7942e9a2f7c.jpg",
     "static/media/seventyfour_image_desk@2x.jpg": "/comfort-from-tati-react/static/media/seventyfour_image_desk@2x.00c288a8d3ecbc27e0f3.jpg",
     "static/media/onehundredone_image_desk@2x.jpg": "/comfort-from-tati-react/static/media/onehundredone_image_desk@2x.ab1bbbb814d9bf17d43e.jpg",
+    "static/media/kids-plaid@2x-mob.jpg": "/comfort-from-tati-react/static/media/kids-plaid@2x-mob.23ff64af4b98abe08fba.jpg",
     "static/media/onehundred_image_desk@2x.jpg": "/comfort-from-tati-react/static/media/onehundred_image_desk@2x.4efe50ccf434bbbc42d8.jpg",
     "static/media/seventytwo_image_desk@2x.jpg": "/comfort-from-tati-react/static/media/seventytwo_image_desk@2x.30c4b1e34e3e5c6a2042.jpg",
     "static/media/eighty_image_desk@2x.jpg": "/comfort-from-tati-react/static/media/eighty_image_desk@2x.0325b7a946a357df2480.jpg",
@@ -245,10 +250,10 @@
     "index.html": "/comfort-from-tati-react/index.html",
     "static/media/arrow.svg": "/comfort-from-tati-react/static/media/arrow.f513c4668035047b2d2e0db26e7ddc57.svg",
     "main.6906c0de.css.map": "/comfort-from-tati-react/static/css/main.6906c0de.css.map",
-    "main.0d94cd17.js.map": "/comfort-from-tati-react/static/js/main.0d94cd17.js.map"
+    "main.eb326f67.js.map": "/comfort-from-tati-react/static/js/main.eb326f67.js.map"
   },
   "entrypoints": [
     "static/css/main.6906c0de.css",
-    "static/js/main.0d94cd17.js"
+    "static/js/main.eb326f67.js"
   ]
 }
