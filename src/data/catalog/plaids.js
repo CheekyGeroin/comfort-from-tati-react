@@ -2,6 +2,8 @@ export const plaids = [
   {
     id: 'braided_Plaid',
     text: 'Плед плетінка',
+    imgMob: `${require('images/catalog-list/blue-plaid-mob.jpg')}`,
+    imgMob2x: `${require('images/catalog-list/blue-plaid@2x-mob.jpg')}`,
     imgTabl: `${require('images/catalog-list/blue-plaid-tabl.jpg')}`,
     imgTabl2x: `${require('images/catalog-list/blue-plaid@2x-tabl.jpg')}`,
     imgDesk: `${require('images/catalog-list/blue-plaid-desk.jpg')}`,
@@ -11,6 +13,8 @@ export const plaids = [
   {
     id: 'honeycombs_Plaid',
     text: 'Плед соти',
+    imgMob: `${require('images/catalog-list/list-yellow-plaid-mob.jpg')}`,
+    imgMob2x: `${require('images/catalog-list/list-yellow-plaid@2x-mob.jpg')}`,
     imgTabl: `${require('images/catalog-list/list-yellow-plaid-tabl.jpg')}`,
     imgTabl2x: `${require('images/catalog-list/list-yellow-plaid@2x-tabl.jpg')}`,
     imgDesk: `${require('images/catalog-list/list-yellow-plaid-desk.jpg')}`,
@@ -20,6 +24,8 @@ export const plaids = [
   {
     id: 'heart_Plaid',
     text: 'Плед серденько',
+    imgMob: `${require('images/catalog-list/list-pink-plaid-mob.jpg')}`,
+    imgMob2x: `${require('images/catalog-list/list-pink-plaid@2x-mob.jpg')}`,
     imgTabl: `${require('images/catalog-list/list-pink-plaid-tabl.jpg')}`,
     imgTabl2x: `${require('images/catalog-list/list-pink-plaid@2x-tabl.jpg')}`,
     imgDesk: `${require('images/catalog-list/list-pink-plaid-desk.jpg')}`,

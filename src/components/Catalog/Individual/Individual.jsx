@@ -1,8 +1,11 @@
 import { useState } from 'react';
-import { desktopPoint, tabletPoint } from 'utils/breakpoints';
+import { desktopPoint, mobilePoint, tabletPoint } from 'utils/breakpoints';
 import {
+  bgBackBtn,
+  bgHoverBackBtn,
   boxShadowHoverIndForward,
   boxShadowIndBack,
+  boxShadowIndBackHover,
   boxShadowIndForward,
   btnBgColor,
   hoverBtnColor,
@@ -99,7 +102,7 @@ const Individual = () => {
     setNickname('');
   };
 
-  const notMobileWidth = tabletPoint || desktopPoint;
+  const mobileOrTabletWidth = tabletPoint || mobilePoint;
   return (
     <Container>
       <Form onSubmit={handleSubmit}>
@@ -199,13 +202,16 @@ const Individual = () => {
             </Item>
           </List>
         </FormContainer>
-        {notMobileWidth && <ButtonContainer>
+        <ButtonContainer>
           <ButtonList>
             <ButtonItem>
               <Btn
                 type="button"
-                bgColor="#CFCFCF"
+                bgColor={`${bgBackBtn}`}
                 boxShadow={`${boxShadowIndBack}`}
+                bgHoverColor={`${bgHoverBackBtn}`}
+                boxShadowHover={`${boxShadowIndBackHover}`}
+
               >
                 <IndividualSvgSelector id={'arrow'} />
                 Назад
@@ -221,7 +227,7 @@ const Individual = () => {
               >
                 Продовжити оформлення
               </Btn>}
-              {tabletPoint &&<Btn
+              {mobileOrTabletWidth &&<Btn
                 type="submit"
                 bgColor={`${btnBgColor}`}
                 boxShadow={`${boxShadowIndForward}`}
@@ -232,7 +238,7 @@ const Individual = () => {
               </Btn>}
             </ButtonItem>
           </ButtonList>
-        </ButtonContainer>}
+        </ButtonContainer>
       </Form>
     </Container>
   );

@@ -13,10 +13,14 @@ export const hoverIconColor = '#F0B69C';
 export const hoverBtnColor = '#F9B584';
 export const cubicBezier = 'cubic-bezier(0.4, 0, 0.2, 1)';
 export const burgerBgColor = '#052D38';
+export const bgBackBtn = '#CFCFCF';
+export const bgHoverBackBtn = '#B1AFAF';
 
 export const boxShadowIndBack =
   'inset 4px 4px 4px rgba(246, 247, 241, 0.3), inset -6px -6px 3px rgba(167, 164, 164, 0.5)';
 
+export const boxShadowIndBackHover =
+  'inset 4px 4px 4px rgba(255, 255, 255, 0.3), inset -6px -6px 3px rgba(137, 134, 134, 0.5);';
 export const boxShadowIndForward =
   'inset 4px 4px 4px rgba(246, 247, 241, 0.3), inset -6px -6px 3px rgba(240, 182, 156, 0.6)';
 export const boxShadowHoverIndForward =

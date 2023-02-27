@@ -254,6 +254,7 @@ font-family: ${mainFont};
 export const Link = styled(NavLink)``;
 
 export const ButtonContainer = styled.div`
+margin-bottom:20px;
   @media screen and (min-width: ${tablet}) {
     margin-bottom: 40px;
   }
@@ -267,18 +268,24 @@ export const ButtonList = styled.ul`
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding:0;
+  margin:0;
+
+  
 `;
 
 export const ButtonItem = styled.li`
-
-}`;
+`;
 
 export const Btn = styled.button`
   font-family: ${secondFont};
   font-style: normal;
   font-weight: ${mainFontWeight};
-  font-size: 40px;
-  line-height: 1.25;
+  font-size:18px;
+   line-height: 1.25;
+  
+  display:flex;
+  align-items:center;
 
   cursor: pointer;
   letter-spacing: 0.03em;
@@ -287,6 +294,7 @@ export const Btn = styled.button`
   border: none;
   border-radius: 35px 5px;
   color: ${mainTextColor};
+  padding:7px 20px;
   box-shadow: ${props => props.boxShadow};
   transition: background-color 250ms ${cubicBezier},
     box-shadow 250ms ${cubicBezier};
@@ -297,10 +305,16 @@ export const Btn = styled.button`
   }
   
   @media screen and (min-width: ${tablet}) {
+    font-size: 40px;
+ 
     padding: 12px 40px;
   }
 `;
 export const Svg = styled.svg`
+width:44px;
+height: 25px;
+margin-right:5px;
+
 @media screen and (min-width:${tablet}){
   width:79px;
   height:21px;

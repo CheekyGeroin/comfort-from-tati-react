@@ -55,6 +55,8 @@ text-decoration:none;
 color:#377384;
 font-family: ${mainFont};
 font-weight: ${mainFontWeight};
+font-size:18px;
+line-height:1.67;
 letter-spacing: 0.04em;
 &.active{
     text-decoration:underline;

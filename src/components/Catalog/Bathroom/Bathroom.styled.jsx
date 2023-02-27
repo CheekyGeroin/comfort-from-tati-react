@@ -26,6 +26,7 @@ export const Container = styled.div`
 
 export const TitleContainer = styled.div`
   border-bottom: 2px solid ${mainTextColor};
+  margin-bottom: 20px;
   @media screen and (min-width: ${tablet}) {
     margin-bottom: 27px;
   }
@@ -38,14 +39,15 @@ export const Title = styled.h1`
   color: ${mainTextColor};
   font-family: ${secondFont};
   font-weight: ${mainFontWeight};
+  font-size: 28px;
+  line-height: 1;
+  letter-spacing: 0.03em;
   text-transform:capitalize;
   margin: 0;
   padding: 0;
   @media screen and (min-width: ${tablet}) {
     font-size: 40px;
     line-height: 1.25;
-
-    letter-spacing: 0.03em;
   }
   @media screen and (min-width: ${desktop}) {
     font-size: 78px;
@@ -57,10 +59,11 @@ export const List = styled.ul`
   list-style: none;
   margin: 0;
   padding: 0;
-  @media screen and (min-width: ${tablet}) {
-    display: flex;
+  margin-bottom: 20px;
+  display: flex;
     align-items: center;
     justify-content: center;
+  @media screen and (min-width: ${tablet}) {
     margin-bottom: 60px;
   }
   @media screen and (min-width: ${desktop}) {
@@ -89,6 +92,7 @@ export const TextContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 6px 13px 7px 13px;
   border: none;
   border-radius: 0 0 20px 20px;
   background-color: ${btnBgColor};
@@ -108,6 +112,9 @@ export const TextContainer = styled.div`
 export const Text = styled.p`
   font-family: ${secondFont};
   font-weight: ${mainFontWeight};
+  font-size: 18px;
+  line-height: 1.3;
+  letter-spacing: 0.03em;
   text-transform: capitalize;
   color: ${mainTextColor};
   margin: 0;
@@ -115,7 +122,6 @@ export const Text = styled.p`
   @media screen and (min-width: ${tablet}) {
     font-size: 40px;
     line-height: 1.25;
-    letter-spacing: 0.03em;
   }
 `;
 

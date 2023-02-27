@@ -26,8 +26,8 @@ const Plaids = () => {
                 <Img
                   src={`${item.imgTabl}`}
                   alt={item.alt}
-                  srcSet={`${item.imgTabl} 317w, ${item.imgDesk} 376w, ${item.imgTabl2x} 634w, ${item.imgDesk2x} 752w`}
-                  sizes="(min-width:1280px) 376px, (min-width:768px) 317px, 100vw"
+                  srcSet={`${item.imgMob} 148w, ${item.imgMob2x} 296w, ${item.imgTabl} 317w, ${item.imgDesk} 376w, ${item.imgTabl2x} 634w, ${item.imgDesk2x} 752w`}
+                  sizes="(min-width:1280px) 376px, (min-width:768px) 317px, (max-width:767px) 148px, 100vw"
                 />
               </ImgContainer>
               <TextContainer>

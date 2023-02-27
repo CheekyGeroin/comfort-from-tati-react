@@ -15,6 +15,7 @@ height:20px;
 `;
 
 export const Link = styled(NavLink)`
+margin-right:5px;
 @media screen and (min-width:${tablet}){
   margin-right:40px;
 } 
