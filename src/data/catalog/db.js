@@ -35,8 +35,10 @@ const db = {
         },
       ],
       basketInfo: {
-        title: 'Плед плетінка',
-        price: '2600 ₴',
+        imgDesk: `${require('images/basket/basket_braided_desk.jpg')}`,
+        imgDesk2x: `${require('images/basket/basket_braided_desk@2x.jpg')}`,
+        basketTitle: 'Плед плетінка',
+        basketPrice: '2600 ₴',
       },
     },
     {
@@ -74,8 +76,10 @@ const db = {
         },
       ],
       basketInfo: {
-        title: 'Плед соти',
-        price: '2600 ₴',
+        imgDesk: `${require('images/basket/basket_honey_desk.jpg')}`,
+        imgDesk2x: `${require('images/basket/basket_honey_desk@2x.jpg')}`,
+        basketTitle: 'Плед соти',
+        basketPrice: '2600 ₴',
       },
     },
     {
@@ -113,8 +117,10 @@ const db = {
         },
       ],
       basketInfo: {
-        title: 'Плед серденько',
-        price: '2799 ₴',
+        imgDesk: `${require('images/basket/basket_heart_desk.jpg')}`,
+        imgDesk2x: `${require('images/basket/basket_heart_desk@2x.jpg')}`,
+        basketTitle: 'Плед серденько',
+        basketPrice: '2799 ₴',
       },
     },
 
@@ -153,8 +159,10 @@ const db = {
         },
       ],
       basketInfo: {
-        title: 'Дитячий плед',
-        price: '650 ₴',
+        imgDesk: `${require('images/basket/basket_kids_desk.jpg')}`,
+        imgDesk2x: `${require('images/basket/basket_kids_desk@2x.jpg')}`,
+        basketTitle: 'Дитячий плед',
+        basketPrice: '650 ₴',
       },
     },
 
@@ -188,8 +196,10 @@ const db = {
         },
       ],
       basketInfo: {
-        title: 'Килим у ванну',
-        price: '999 ₴',
+        imgDesk: `${require('images/basket/basket_bath_desk.jpg')}`,
+        imgDesk2x: `${require('images/basket/basket_bath_desk@2x.jpg')}`,
+        basketTitle: 'Килим у ванну',
+        basketPrice: '999 ₴',
       },
     },
   ],

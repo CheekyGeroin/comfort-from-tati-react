@@ -1,6 +1,5 @@
 // import PropTypes from 'prop-types';
-import { useDispatch } from 'react-redux'
-import { addItem } from 'redux/basketSlice'
+import { useBasket } from 'utils/basketContext'
 import {
   AccentContainer,
   InfoContainer,
@@ -14,10 +13,18 @@ import {
   Title,
   TitleContainer, Span} from './Info.styled'
 const Info = ({ data }) => {
-  const dispatch = useDispatch()
+  const {addItem} = useBasket()
 
   
-  const { title, description, size, price, } = data
+  const { title, description, size, price, basketInfo } = data
+  const { imgDesk, imgDesk2x, basketTitle, basketPrice } = basketInfo
+  const handleClick = () => {
+    
+
+    addItem(imgDesk, imgDesk2x, basketTitle, basketPrice)
+  }
+
+  
   
     return (
         <InfoContainer>
@@ -41,7 +48,7 @@ const Info = ({ data }) => {
             </List>
           </TextContainer>
           <BtnContainer>
-            <Link to="basket" onClick={()=>{dispatch(addItem(title, price))}}>Оформити замовлення</Link>
+            <Link to="/basket" onClick={handleClick}>Оформити замовлення</Link>
           </BtnContainer>
         </InfoContainer>
     )

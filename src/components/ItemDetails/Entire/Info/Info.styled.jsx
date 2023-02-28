@@ -18,6 +18,8 @@ export const InfoContainer = styled.div``;
 
 export const TitleContainer = styled.div`
   border-bottom: 2px solid ${mainTextColor};
+  margin-bottom: 20px;
+  padding-bottom: 10px;
   @media screen and (min-width: ${tablet}) {
     margin-bottom: 30px;
   }
@@ -29,6 +31,8 @@ export const TitleContainer = styled.div`
 export const AccentContainer = styled.div`
   background-color: ${hoverIconColor};
   display: inline-block;
+  padding: 20px 12px;
+  margin-bottom: 20px;
   @media screen and (min-width: ${tablet}) {
     padding: 31px 113px;
     margin-bottom: 30px;
@@ -40,6 +44,8 @@ export const AccentContainer = styled.div`
 `;
 
 export const TextContainer = styled.div`
+  margin-bottom: 20px;
+
   @media screen and (min-width: ${tablet}) {
     margin-bottom: 30px;
   }
@@ -48,7 +54,10 @@ export const TextContainer = styled.div`
   }
 `;
 
-export const BtnContainer = styled.div``;
+export const BtnContainer = styled.div`
+  display: flex;
+  justify-content: center;
+`;
 
 export const List = styled.ul`
   list-style: none;
@@ -57,12 +66,10 @@ export const List = styled.ul`
 `;
 
 export const Item = styled.li`
-  @media screen and (min-width: ${tablet}) {
-    :not(:last-child) {
-      border-bottom: 2px solid ${mainTextColor};
-      margin-bottom: 25px;
-      padding-bottom: 10px;
-    }
+  :not(:last-child) {
+    border-bottom: 2px solid ${mainTextColor};
+    padding-bottom: 10px;
+    margin-bottom: 25px;
   }
 `;
 
@@ -73,49 +80,61 @@ export const Link = styled(NavLink)`
     inset -6px -6px 3px rgba(240, 182, 156, 0.6);
   border-radius: 35px 5px;
   text-decoration: none;
-  font-family:${secondFont};
-  font-weight:${mainFontWeight};
-  transition: background-color 250ms ${cubicBezier}, box-shadow 250ms ${cubicBezier};
+  text-align:center;
+  font-family: ${secondFont};
+  font-weight: ${mainFontWeight};
+  font-size: 28px;
+  line-height: 1;
+  letter-spacing: 0.03em;
+  text-transform: capitalize;
+  padding: 10px 14px;
+  transition: background-color 250ms ${cubicBezier},
+    box-shadow 250ms ${cubicBezier};
 
-  :hover, :focus{
-    background-color:${hoverBtnColor};
-    box-shadow: inset 4px 4px 4px rgba(246, 247, 241, 0.3), inset -6px -6px 3px rgba(240, 182, 156, 0.5);
+  :hover,
+  :focus {
+    background-color: ${hoverBtnColor};
+    box-shadow: inset 4px 4px 4px rgba(246, 247, 241, 0.3),
+      inset -6px -6px 3px rgba(240, 182, 156, 0.5);
   }
 
   @media screen and (min-width: ${tablet}) {
     padding: 12px 40px;
     font-size: 40px;
     line-height: 1.25;
-    letter-spacing: 0.03em;
-    text-transform: capitalize;
   }
 `;
 
 export const Text = styled.p`
-font-family:${mainFont};
-font-weight:${mainFontWeight}
-text-align:center;
-color:${secondTextColor};
-margin:0;
-padding:0;
+  font-family: ${mainFont};
+  font-weight: ${mainFontWeight};
+  line-height: 1.11
+  letter-spacing: 0.04em;
+  text-align: center;
+  color: ${secondTextColor};
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
 
-@media screen and (min-width:${tablet}){
-font-size: 22px;
-line-height: 1.14;
-letter-spacing: 0.04em;
-}
+  @media screen and (min-width: ${tablet}) {
+    font-size: 22px;
+    line-height: 1.14;
+  }
 `;
 
 export const ListText = styled.p`
   font-family: ${mainFont};
   color: ${mainTextColor};
   font-weight: ${mainFontWeight};
+  font-size: 18px;
+  line-height: 1.11;
+  letter-spacing: 0.04em;
+  font-variant: small-caps;
   margin: 0;
   padding: 0;
   @media screen and (min-width: ${tablet}) {
     font-size: 22px;
     line-height: 1.14;
-    letter-spacing: 0.04em;
   }
 `;
 
@@ -129,12 +148,14 @@ export const Title = styled.h1`
 
   font-family: ${secondFont};
   font-weight: ${mainFontWeight};
+  font-size: 28px;
+  line-height: 1;
+  letter-spacing: 0.03em;
   color: ${mainTextColor};
 
   @media screen and (min-width: ${tablet}) {
     font-size: 40px;
     line-height: 1.25;
-    letter-spacing: 0.03em;
   }
   @media screen and (max-width: 1279px) {
     text-transform: capitalize;

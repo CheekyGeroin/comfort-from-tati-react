@@ -1,6 +1,8 @@
+import { useBasket } from "utils/basketContext"
 import BasketItem from "./BasketItem/BasketItem"
 
 const Basket = () => {
+    const {basketItem} = useBasket()
     
     return (
         <div>
@@ -9,7 +11,13 @@ const Basket = () => {
             </div>
 
             <div>
-                <BasketItem/>
+                <ul>
+                    {basketItem.map(item =>
+                        <li key={item.id}>
+                            <BasketItem item={item} />
+                        </li>
+                    )}
+                </ul>
             </div>
         </div>
     )
