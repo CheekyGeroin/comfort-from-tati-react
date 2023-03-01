@@ -1,25 +1,26 @@
 import { useBasket } from "utils/basketContext"
+import { BasketList,BasketListItem, BasketTitle, Container, ListContainer, TitleContainer } from "./Basket.styled"
 import BasketItem from "./BasketItem/BasketItem"
 
 const Basket = () => {
     const {basketItem} = useBasket()
     
     return (
-        <div>
-            <div>
-                <h2>Кошик</h2>
-            </div>
+        <Container>
+            <TitleContainer>
+                <BasketTitle>Кошик</BasketTitle>
+            </TitleContainer>
 
-            <div>
-                <ul>
+            <ListContainer>
+                <BasketList>
                     {basketItem.map(item =>
-                        <li key={item.id}>
+                        <BasketListItem key={item.id}>
                             <BasketItem item={item} />
-                        </li>
+                        </BasketListItem>
                     )}
-                </ul>
-            </div>
-        </div>
+                </BasketList>
+            </ListContainer>
+        </Container>
     )
 }
 

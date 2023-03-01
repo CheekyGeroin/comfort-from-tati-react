@@ -4,6 +4,7 @@ import {
   FormList,
   Img,
   ImgContainer,
+  Label,
   Option,
   Price,
   Select,
@@ -28,16 +29,22 @@ const BasketItem = ({ item }) => {
         </TitleContainer>
         <FormList>
           <FormItem>
-            <Select>
+            <Label>
+              Розмір
+              <Select>
               <Option></Option>
               <Option></Option>
             </Select>
+            </Label>
           </FormItem>
           <FormItem>
-            <Select>
+            <Label>
+              Колір
+              <Select>
               <Option></Option>
               <Option></Option>
             </Select>
+            </Label>
           </FormItem>
         </FormList>
       </div>
