@@ -7,10 +7,12 @@ import {
   Label,
   Option,
   Price,
+  PriceContainer,
   Select,
   Title,
   TitleContainer,
 } from './BasketItem.styled';
+import Counter from './Counter/Counter';
 
 const BasketItem = ({ item }) => {
   return (
@@ -32,26 +34,28 @@ const BasketItem = ({ item }) => {
             <Label>
               Розмір
               <Select>
-              <Option></Option>
-              <Option></Option>
-            </Select>
+                <Option></Option>
+                <Option></Option>
+              </Select>
             </Label>
           </FormItem>
           <FormItem>
             <Label>
               Колір
               <Select>
-              <Option></Option>
-              <Option></Option>
-            </Select>
+                <Option></Option>
+                <Option></Option>
+              </Select>
             </Label>
           </FormItem>
         </FormList>
       </div>
-      <div></div>
-          <div>
-              <Price>{item.price}</Price>
+      <div>
+        <Counter/>
       </div>
+      <PriceContainer>
+        <Price>{item.price}</Price>
+      </PriceContainer>
     </Form>
   );
 };

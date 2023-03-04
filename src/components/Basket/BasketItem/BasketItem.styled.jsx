@@ -94,6 +94,27 @@ margin-top:2px;
 
 export const Option = styled.option``
 
-export const Price = styled.p``
+export const PriceContainer = styled.div`
+margin-left:auto;`
+
+export const Price = styled.p`
+font-family:${mainFont};
+font-weight:${footerAccentFontWeight};
+font-size:11px;
+line-height:1.07;
+letter-spacing:0.04em;
+font-variant:small-caps;
+color:${mainTextColor};
+
+@media screen and (min-width:${tablet}){
+font-size: 22px;
+line-height:1.14;
+}
+
+@media screen and (min-width:${desktop}){
+    font-size:40px;
+    line-height:0.62;
+}
+`
 
 
