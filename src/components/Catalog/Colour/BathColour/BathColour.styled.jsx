@@ -5,6 +5,9 @@ import { mainFontWeight, mainTextColor, secondFont } from 'utils/variables';
 export const Container = styled.div`
   border-bottom: 2px solid ${mainTextColor};
   margin-bottom:20px;
+   display:flex;
+  align-items:baseline;
+  justify-content: space-between;
   @media screen and (min-width:${tablet}){
     margin-bottom:30px;
   }
@@ -35,3 +38,8 @@ export const Subtitle = styled.h2`
     line-height: 1.28;
   }
 `;
+export const Button = styled.button`
+background-color:transparent;
+border:none;
+cursor:pointer;
+`

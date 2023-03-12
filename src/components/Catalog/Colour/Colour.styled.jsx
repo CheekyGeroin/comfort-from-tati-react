@@ -14,3 +14,14 @@ max-width: ${mobile};
     max-width: ${desktop};
  }
 `
+export const Svg = styled.svg`
+width:22px;
+height:13px;
+@media screen and (min-width:${tablet}){
+   width:38px;
+   height:19px;
+}
+@media screen and (min-width:${desktop}){
+   width:47px;
+   height:28px;
+}`
