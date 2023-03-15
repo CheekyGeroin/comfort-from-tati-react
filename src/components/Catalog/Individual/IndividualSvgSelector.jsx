@@ -1,4 +1,4 @@
-import { Svg } from './Individual.styled';
+import { Svg, SvgMenu } from './Individual.styled';
 import PropTypes from 'prop-types';
 
 const IndividualSvgSelector = ({ id }) => {
@@ -16,6 +16,20 @@ const IndividualSvgSelector = ({ id }) => {
             clipRule="evenodd"
           />
         </Svg>
+      );
+    case 'arrow-menu':
+      return (
+        <SvgMenu
+        xmlns="http://www.w3.org/2000/svg"
+        width="47"
+        height="28"
+        fill="none"
+      >
+        <path
+          fill="#074050"
+          d="M44.15 0 47 3.019 23.5 28 0 3.019 2.835 0 23.5 21.948 44.15 0Z"
+        />
+      </SvgMenu>
       );
 
     default:

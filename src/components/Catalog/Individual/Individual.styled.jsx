@@ -36,6 +36,9 @@ margin-bottom:50px;
 export const TitleContainer = styled.div`
   border-bottom: 2px solid ${mainTextColor};
   margin-bottom:20px;
+  display:flex;
+  align-items:baseline;
+  justify-content: space-between;
   @media screen and (min-width: ${tablet}) {
     margin-bottom: 40px;
   }
@@ -325,3 +328,21 @@ margin-right:5px;
   height:22px;
 }`
 
+export const SvgMenu = styled.svg`
+width:22px;
+height:13px;
+@media screen and (min-width:${tablet}){
+   width:38px;
+   height:19px;
+}
+@media screen and (min-width:${desktop}){
+   width:47px;
+   height:28px;
+}
+`
+
+export const Button = styled.button`
+background-color:transparent;
+border:none;
+cursor:pointer;
+`

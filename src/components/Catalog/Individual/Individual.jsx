@@ -30,10 +30,12 @@ import {
   ButtonList,
   ButtonItem,
   Btn,
+  Button,
 } from './Individual.styled';
 import IndividualSvgSelector from './IndividualSvgSelector';
 
 const Individual = () => {
+  const [className, setClassName] = useState('close')
   const [category, setCategory] = useState('');
   const [type, setType] = useState('');
   const [size, setSize] = useState('');
@@ -102,6 +104,14 @@ const Individual = () => {
     setNickname('');
   };
 
+  const handleClick = () => {
+    setClassName('open')
+    if (className === 'open') {
+      setClassName('close')
+    }
+    
+  }
+
   const mobileOrTabletWidth = tabletPoint || mobilePoint;
   return (
     <Container>
@@ -109,6 +119,9 @@ const Individual = () => {
         <SelectContainer>
           <TitleContainer>
             <Title>Найменування товару</Title>
+            <Button type='button' onClick={handleClick}>
+              <IndividualSvgSelector id={'arrow-menu'} />
+            </Button>
           </TitleContainer>
           <SelectList>
             <SelectItem>
@@ -180,6 +193,9 @@ const Individual = () => {
         <FormContainer>
           <TitleContainer>
             <Title>Особисті дані</Title>
+            <Button type='button' onClick={handleClick}>
+              <IndividualSvgSelector id={'arrow-menu'} />
+            </Button>
           </TitleContainer>
           <List>
             <Item>
