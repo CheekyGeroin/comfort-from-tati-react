@@ -10,28 +10,33 @@ const db = {
       entires: [
         {
           id: 1,
-          imgDesk: `${require('images/catalog-list/entires/blue/blue-first-desk.jpg')}`,
+          original: `${require('images/catalog-list/entires/blue/blue-first-desk.jpg')}`,
           imgDesk2x: `${require('images/catalog-list/entires/blue/blue-first-desk@2x.jpg')}`,
+          thumbnail: `${require('images/catalog-list/entires/blue/blue-first-desk-thumb.jpg')}`,
         },
         {
           id: 2,
-          imgDesk: `${require('images/catalog-list/entires/blue/blue-second-desk.jpg')}`,
+          original: `${require('images/catalog-list/entires/blue/blue-second-desk.jpg')}`,
           imgDesk2x: `${require('images/catalog-list/entires/blue/blue-second-desk@2x.jpg')}`,
+          thumbnail: `${require('images/catalog-list/entires/blue/blue-second-desk-thumb.jpg')}`,
         },
         {
           id: 3,
-          imgDesk: `${require('images/catalog-list/entires/blue/blue-third-desk.jpg')}`,
+          original: `${require('images/catalog-list/entires/blue/blue-third-desk.jpg')}`,
           imgDesk2x: `${require('images/catalog-list/entires/blue/blue-third-desk@2x.jpg')}`,
+          thumbnail: `${require('images/catalog-list/entires/blue/blue-third-desk-thumb.jpg')}`,
         },
         {
           id: 4,
-          imgDesk: `${require('images/catalog-list/entires/blue/blue-fourth-desk.jpg')}`,
+          original: `${require('images/catalog-list/entires/blue/blue-fourth-desk.jpg')}`,
           imgDesk2x: `${require('images/catalog-list/entires/blue/blue-fourth-desk@2x.jpg')}`,
+          thumbnail: `${require('images/catalog-list/entires/blue/blue-fourth-desk-thumb.jpg')}`,
         },
         {
           id: 5,
-          imgDesk: `${require('images/catalog-list/entires/blue/blue-fifth-desk.jpg')}`,
+          original: `${require('images/catalog-list/entires/blue/blue-fifth-desk.jpg')}`,
           imgDesk2x: `${require('images/catalog-list/entires/blue/blue-fifth-desk@2x.jpg')}`,
+          thumbnail: `${require('images/catalog-list/entires/blue/blue-fifth-desk-thumb.jpg')}`,
         },
       ],
       basketInfo: {
