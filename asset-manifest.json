@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/comfort-from-tati-react/static/css/main.b5150118.css",
-    "main.js": "/comfort-from-tati-react/static/js/main.17afd33f.js",
+    "main.css": "/comfort-from-tati-react/static/css/main.0dc3196d.css",
+    "main.js": "/comfort-from-tati-react/static/js/main.2d94a9be.js",
     "static/media/20221016-133440-223.mp4": "/comfort-from-tati-react/static/media/20221016-133440-223.2043641f2c6a2fcd6407.mp4",
     "static/media/20221016-133440-223.webm": "/comfort-from-tati-react/static/media/20221016-133440-223.12896e037e085b2ab1c9.webm",
     "static/media/blue-fourth-desk@2x.jpg": "/comfort-from-tati-react/static/media/blue-fourth-desk@2x.80d255dc5fa7d830a040.jpg",
@@ -240,6 +240,7 @@
     "static/media/sixtyseven_image_desk@2x.jpg": "/comfort-from-tati-react/static/media/sixtyseven_image_desk@2x.d488b48ea2c21a67a116.jpg",
     "static/media/fourteen_image_desk@2x.jpg": "/comfort-from-tati-react/static/media/fourteen_image_desk@2x.936766fe5f841c238ec9.jpg",
     "static/media/yellow-plaid-375w.jpg": "/comfort-from-tati-react/static/media/yellow-plaid-375w.33c32b0ac7c72e749d6f.jpg",
+    "static/media/bath-first-desk-thumb@2x.jpg": "/comfort-from-tati-react/static/media/bath-first-desk-thumb@2x.a422cd0434f3a4cf416d.jpg",
     "static/media/ninetynine_image_desk@2x.jpg": "/comfort-from-tati-react/static/media/ninetynine_image_desk@2x.5cefbeab756e99362194.jpg",
     "static/media/pink-plaid-375w.jpg": "/comfort-from-tati-react/static/media/pink-plaid-375w.01631cfda8afdfdd39fd.jpg",
     "static/media/twentyseven_image_desk@2x.jpg": "/comfort-from-tati-react/static/media/twentyseven_image_desk@2x.75f6f6a17b97c3670202.jpg",
@@ -306,11 +307,11 @@
     "static/media/onehundredthree_image_mob@2x.jpg": "/comfort-from-tati-react/static/media/onehundredthree_image_mob@2x.bde27440253a1527287a.jpg",
     "index.html": "/comfort-from-tati-react/index.html",
     "static/media/arrow.svg": "/comfort-from-tati-react/static/media/arrow.f513c4668035047b2d2e0db26e7ddc57.svg",
-    "main.b5150118.css.map": "/comfort-from-tati-react/static/css/main.b5150118.css.map",
-    "main.17afd33f.js.map": "/comfort-from-tati-react/static/js/main.17afd33f.js.map"
+    "main.0dc3196d.css.map": "/comfort-from-tati-react/static/css/main.0dc3196d.css.map",
+    "main.2d94a9be.js.map": "/comfort-from-tati-react/static/js/main.2d94a9be.js.map"
   },
   "entrypoints": [
-    "static/css/main.b5150118.css",
-    "static/js/main.17afd33f.js"
+    "static/css/main.0dc3196d.css",
+    "static/js/main.2d94a9be.js"
   ]
 }
