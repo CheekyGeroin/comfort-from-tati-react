@@ -1,5 +1,6 @@
 import React from 'react';
 import ImageGallery from 'react-image-gallery';
+import './ImgSlider.css'
 
 class ImgGallery extends React.Component{
   constructor(props) {

@@ -8,13 +8,14 @@ export const useBasket = () => useContext(BasketContext);
 export const BasketProvider = ({ children }) => {
   const [basketItem, setBasketItem] = useState([]);
 
-  const addItem = ( img, img2x, title, price ) => {
+  const addItem = ( img, img2x, title, price, quantity ) => {
     const newItem = {
       id: nanoid(),
       img,
       img2x,
       title,
       price,
+      quantity
     };
     setBasketItem([newItem, ...basketItem]);
     

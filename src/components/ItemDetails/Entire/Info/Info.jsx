@@ -17,11 +17,11 @@ const Info = ({ data }) => {
 
   
   const { title, description, size, price, basketInfo } = data
-  const { imgDesk, imgDesk2x, basketTitle, basketPrice } = basketInfo
+  const { imgDesk, imgDesk2x, basketTitle, basketPrice, quantity } = basketInfo
   const handleClick = () => {
     
 
-    addItem(imgDesk, imgDesk2x, basketTitle, basketPrice)
+    addItem(imgDesk, imgDesk2x, basketTitle, basketPrice, quantity)
   }
 
   

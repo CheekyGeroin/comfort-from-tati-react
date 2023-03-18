@@ -14,7 +14,10 @@ import {
   secondTextColor,
 } from 'utils/variables';
 
-export const InfoContainer = styled.div``;
+export const InfoContainer = styled.div`
+@media screen and (min-width:${desktop}){
+  margin-left:25px;
+}`;
 
 export const TitleContainer = styled.div`
   border-bottom: 2px solid ${mainTextColor};
