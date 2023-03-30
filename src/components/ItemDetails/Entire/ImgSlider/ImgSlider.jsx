@@ -6,6 +6,7 @@ class ImgGallery extends React.Component{
   constructor(props) {
     super(props);
     this.state = {
+      autoPlay: true,
       showIndex: false,
       showBullets: false,
       infinite: true,
@@ -16,7 +17,7 @@ class ImgGallery extends React.Component{
       showGalleryPlayButton: true,
       showNav: true,
       isRTL: false,
-      slideDuration: 450,
+      slideDuration: 500,
       slideInterval: 2000,
       slideOnThumbnailOver: false,
       thumbnailPosition: 'right',
@@ -31,7 +32,8 @@ class ImgGallery extends React.Component{
     return (
       <ImageGallery
           
-          items={this.images}
+        items={this.images}
+        autoPlay={this.state.autoPlay}
           infinite={this.state.infinite}
           showBullets={this.state.showBullets}
           showFullscreenButton={this.state.showFullscreenButton && this.state.showGalleryFullscreenButton}
