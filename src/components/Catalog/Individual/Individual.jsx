@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { colourPlaid, colourBath, colourKids } from 'data/catalog/colour';
 import { desktopPoint, mobilePoint, tabletPoint } from 'utils/breakpoints';
 import {
   bgBackBtn,
@@ -33,9 +34,10 @@ import {
   Button,
 } from './Individual.styled';
 import IndividualSvgSelector from './IndividualSvgSelector';
+import Dropdown from 'components/Dropdown/Dropdown';
+import DropItem from 'components/Dropdown/DropItem/DropItem';
 
 const Individual = () => {
-  const [className, setClassName] = useState('close')
   const [category, setCategory] = useState('');
   const [type, setType] = useState('');
   const [size, setSize] = useState('');
@@ -104,13 +106,7 @@ const Individual = () => {
     setNickname('');
   };
 
-  const handleClick = () => {
-    setClassName('open')
-    if (className === 'open') {
-      setClassName('close')
-    }
-    
-  }
+  
 
   const mobileOrTabletWidth = tabletPoint || mobilePoint;
   return (
@@ -119,7 +115,7 @@ const Individual = () => {
         <SelectContainer>
           <TitleContainer>
             <Title>Найменування товару</Title>
-            <Button type='button' onClick={handleClick}>
+            <Button type='button'>
               <IndividualSvgSelector id={'arrow-menu'} />
             </Button>
           </TitleContainer>
@@ -168,14 +164,24 @@ const Individual = () => {
               </Label>
             </SelectItem>
             <SelectItem>
-              <Label>
-                Колір
-                <Select name="colour" onChange={handleChange}>
-                  <Option value="-"> </Option>
-                  <Option value="black">Чорний</Option>
-                  <Option value="white">Білий</Option>
-                </Select>
-              </Label>
+              <Dropdown label='Колір'>
+                {category === 'plaids' && colourPlaid.map(item => {
+                  return (
+                    <DropItem key={item.id} value={item}> <img src={item.imgMob} alt={item.id} /></DropItem>
+                  )
+                  
+                })}
+                {category === 'bathroom' && colourBath.map(item => {
+                  return (
+                    <DropItem key={item.id} value={item}> <img src={item.imgMob} alt={item.id} /></DropItem>
+                  )
+                })}
+                {category === 'kids' && colourKids.map(item => {
+                  return (
+                    <DropItem key={item.id} value={item}> <img src={item.imgMob} alt={item.id} /></DropItem>
+                  )
+                })}
+              </Dropdown>
             </SelectItem>
             <SelectItem>
               <Label>
@@ -193,7 +199,7 @@ const Individual = () => {
         <FormContainer>
           <TitleContainer>
             <Title>Особисті дані</Title>
-            <Button type='button' onClick={handleClick}>
+            <Button type='button' >
               <IndividualSvgSelector id={'arrow-menu'} />
             </Button>
           </TitleContainer>
