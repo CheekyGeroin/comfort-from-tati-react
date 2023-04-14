@@ -164,7 +164,9 @@ const Individual = () => {
               </Label>
             </SelectItem>
             <SelectItem>
-              <Dropdown label='Колір'>
+              {category === '' && <Dropdown label='Колір' disabled>
+              </Dropdown>}
+              {category !== '' && <Dropdown label='Колір' onChange={item => console.Console.log(item)}>
                 {category === 'plaids' && colourPlaid.map(item => {
                   return (
                     <DropItem key={item.id} value={item}> <img src={item.imgMob} alt={item.id} /></DropItem>
@@ -181,7 +183,7 @@ const Individual = () => {
                     <DropItem key={item.id} value={item}> <img src={item.imgMob} alt={item.id} /></DropItem>
                   )
                 })}
-              </Dropdown>
+              </Dropdown>}
             </SelectItem>
             <SelectItem>
               <Label>

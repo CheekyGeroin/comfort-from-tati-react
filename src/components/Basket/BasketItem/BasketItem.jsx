@@ -1,4 +1,4 @@
-import { useState } from 'react';
+
 import {
   Form,
   FormItem,
@@ -12,22 +12,14 @@ import {
   Select,
   Title,
   TitleContainer,
+  CounterContainer
 } from './BasketItem.styled';
 import Counter from './Counter/Counter';
 
-const BasketItem = ({ item }) => {
-  const {img, img2x, title, price, quantity} = item
+const BasketItem = ({ item, increase, decrease}) => {
+  const { id, img, img2x, title, totalPrice, quantity } = item;
 
-  const [value, setValue] = useState(quantity)
   
-  const clickCounter = ({value}) => {
-    
-    setValue(value)
-
-  }
-
-console.log(value)  
-  const priceOfItem = value * price;
   return (
     <Form>
       <ImgContainer>
@@ -63,11 +55,11 @@ console.log(value)
           </FormItem>
         </FormList>
       </div>
-      <div>
-        <Counter amount={value} onClick={clickCounter} />
-      </div>
+      <CounterContainer>
+        <Counter quantity={quantity} id={id} increase={increase} decrease={ decrease} />
+      </CounterContainer>
       <PriceContainer>
-        <Price>{priceOfItem} ₴</Price>
+        <Price>{totalPrice} ₴</Price>
       </PriceContainer>
     </Form>
   );

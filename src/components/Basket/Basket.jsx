@@ -1,45 +1,69 @@
-
-import { useBasket } from "utils/basketContext"
-import { BasketList,BasketListItem, BasketTitle, Container, ListContainer, TitleContainer } from "./Basket.styled"
-import BasketItem from "./BasketItem/BasketItem"
+import { useBasket } from 'utils/basketContext';
+import {
+  BasketList,
+  BasketListItem,
+  BasketTitle,
+  Container,
+  ListContainer,
+  TitleContainer,
+  EmptyWarning,
+} from './Basket.styled';
+import BasketItem from './BasketItem/BasketItem';
+import { useState } from 'react';
 
 const Basket = () => {
-    const { basketItem } = useBasket()
-    const basketLength = basketItem.length - 1;
+  const { basketItem } = useBasket();
+  const [cart, setCart] = useState(basketItem);
 
-    console.log(basketLength)
-    console.log(basketItem.length)
-
+  const increase = id => {
+    setCart(cart => {
+        return cart.map(product => {
+            if (product.id === id) {
+                return {
+                    ...product,
+                    quantity: ++product.quantity,
+                    totalPrice: product.quantity * product.basketPrice
+              }
+            }
+            return product
+      });
+    });
+    };
     
+    const decrease = (id) => {
+        setCart(cart => {
+            return cart.map((product) => {
+                if (product.id === id) {
+                    return {
+                        ...product,
+                        quantity: --product.quantity,
+                        totalPrice: product.quantity * product.basketPrice
+                    }
+                }
+                return product
+            })
+        })
+    }
+  return (
+    <Container>
+      <TitleContainer>
+        <BasketTitle>Кошик</BasketTitle>
+      </TitleContainer>
 
+      {cart.length >= 1 && (
+        <ListContainer>
+          <BasketList>
+            {cart.map(item => (
+              <BasketListItem key={item.id}>
+                    <BasketItem item={item} increase={increase} decrease={decrease} />
+              </BasketListItem>
+            ))}
+          </BasketList>
+        </ListContainer>
+      )}
+      {cart.length < 1 && <EmptyWarning>У вас порожній кошик</EmptyWarning>}
+    </Container>
+  );
+};
 
-       return (
-        <Container>
-            <TitleContainer>
-                <BasketTitle>Кошик</BasketTitle>
-            </TitleContainer>
-
-            {basketItem.length >= 1 && <ListContainer>
-                <BasketList>
-                    {basketItem.map(item =>
-                        <BasketListItem key={item.id}>
-                            <BasketItem item={item} />
-                        </BasketListItem>
-                    )}
-                </BasketList>
-            </ListContainer>}
-            {basketItem.length === 0 && <ListContainer>
-                <BasketList>
-                    {basketItem.map(item =>
-                        <BasketListItem key={item.id}>
-                            <BasketItem item={item} />
-                        </BasketListItem>
-                    )}
-                </BasketList>
-            </ListContainer>}
-
-        </Container>
-    )
-}
-
-export default Basket
+export default Basket;

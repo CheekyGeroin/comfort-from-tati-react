@@ -94,8 +94,14 @@ margin-top:2px;
 
 export const Option = styled.option``
 
+export const CounterContainer = styled.div`
+margin-left:auto;
+margin-right:auto;`
+
+
 export const PriceContainer = styled.div`
-margin-left:auto;`
+
+`
 
 export const Price = styled.p`
 font-family:${mainFont};
@@ -105,6 +111,9 @@ line-height:1.07;
 letter-spacing:0.04em;
 font-variant:small-caps;
 color:${mainTextColor};
+margin:0;
+padding:0;
+
 
 @media screen and (min-width:${tablet}){
 font-size: 22px;
