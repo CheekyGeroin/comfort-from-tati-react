@@ -9,11 +9,26 @@ import {
   EmptyWarning,
 } from './Basket.styled';
 import BasketItem from './BasketItem/BasketItem';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
+import { useFirstMountState } from 'react-use';
+
 
 const Basket = () => {
+  const isFirstRender = useFirstMountState()
   const { basketItem } = useBasket();
-  const [cart, setCart] = useState(basketItem);
+  const storedItem = JSON.parse(localStorage.getItem('item'))
+const [cart, setCart] = useState(basketItem);
+ 
+
+  useEffect(() => {
+    localStorage.setItem('item', JSON.stringify(basketItem))
+    if (!isFirstRender) {
+      setCart(storedItem)
+    }
+    
+  },[basketItem, isFirstRender, storedItem])
+
+
 
   const increase = id => {
     setCart(cart => {
@@ -43,7 +58,8 @@ const Basket = () => {
                 return product
             })
         })
-    }
+  }
+  
   return (
     <Container>
       <TitleContainer>

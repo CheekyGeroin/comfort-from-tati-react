@@ -20,7 +20,6 @@ const ItemDetails = () => {
     return null;
     }
 
-  console.log(plaid.entires)
   return (
     <Container>
       <EntireContainer>

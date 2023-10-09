@@ -17,11 +17,16 @@ const Info = ({ data }) => {
 
   
   const { title, description, size, price, basketInfo } = data
-  const { imgDesk, imgDesk2x, basketTitle, basketPrice, quantity } = basketInfo
+  const { imgDesk, imgDesk2x, basketTitle, basketPrice, quantity, totalPrice } = basketInfo
   const handleClick = () => {
     
 
-    addItem(imgDesk, imgDesk2x, basketTitle, basketPrice, quantity)
+    addItem(imgDesk, imgDesk2x, basketTitle, basketPrice, quantity, totalPrice)
+    // const newItem = {
+    //   imgDesk, imgDesk2x, basketTitle, basketPrice, quantity, totalPrice
+    // }
+
+    // localStorage.setItem('item', JSON.stringify(newItem))
   }
 
   
